@@ -2011,10 +2011,10 @@ $_LANG['oauth']['permAccessNameAndEmail'] = "Accesa con tu nombre y dirección d
 
 $_LANG['errorButTryAgain'] = "Ha ocurrido un error. Intenta de nuevo, por favor.";
 $_LANG['emailSent'] = "Email Enviado";
-$_LANG['verificationKeyExpired'] = "This email verification key has expired. Please login to request a new one.";
-$_LANG['emailAddressVerified'] = "Thank you for confirming your email address.";
-$_LANG['emailKeyExpired'] = "This email verification key has expired. Please request a new one.";
-$_LANG['verifyEmailAddress'] = "Please check your email and follow the link to verify your email address.";
+$_LANG['verificationKeyExpired'] = "Esta clave verificación de correo ha expirado. Por favor, inicia sesión para solicitar una nueva clave.";
+$_LANG['emailAddressVerified'] = "Gracias por confirmar tu dirección de correo.";
+$_LANG['emailKeyExpired'] = "Esta clave verificación de correo ha expirado. Por favor, solicita una nueva.";
+$_LANG['verifyEmailAddress'] = "Por favor revisa tu correo y sigue el enlace contenido para verificar tu dirección de email.";
 $_LANG['resendEmail'] = "Reenviar email de verificación";
 
 // Markdown Editor Help
