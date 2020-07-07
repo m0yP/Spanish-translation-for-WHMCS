@@ -1,7 +1,7 @@
 # Spanish translation for WHMCS
 Full spanish translation for WHMCS / Traducción completa para WHMCS en español.
 
-#### La traducción está hecha en segunda persona del singular (se habla de tú). Se encuentra al 100%, salvo algunos módulos que no se pueden utilizar fuera de Estados Unidos.
+#### La traducción está hecha en segunda persona del singular (se habla de tú). Se encuentra traducido al 100% en el core; salvo algunos módulos que no se pueden utilizar fuera de Estados Unidos o módulos de la tienda, como SSL, VPN, SiteLock, etc.
 
 ### Uso:
 
