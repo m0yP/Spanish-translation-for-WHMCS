@@ -11,7 +11,7 @@ Full spanish translation for WHMCS / Traducción completa para WHMCS en español
 
 ### Notas:
 
-El archivo funciona desde la versión 3x hasta la 7.5.0.
+El archivo funciona desde la versión 3x hasta la 7.10.2.
 
 Una vista previa del idioma, se puede encontrar [en este enlace](https://www.pecmo.com.mx/clientes/ "Pecmo").
 
