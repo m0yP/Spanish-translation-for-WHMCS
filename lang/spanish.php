@@ -1,7 +1,7 @@
 <?php
 /**
  * WHMCS Language File
- * Spanish (es)
+ * Spanish (es-mx) by m0yP
  *
  * Please Note: These language files are overwritten during software updates
  * and therefore editing of these files directly is not advised. Instead we
@@ -9,19 +9,19 @@
  * which will be safely preserved through the upgrade process.
  *
  * For instructions on overrides, please visit:
- *   http://docs.whmcs.com/Language_Overrides
+ *   https://developers.whmcs.com/languages/overrides/
  *
  * @package    WHMCS
  * @author     WHMCS Limited <development@whmcs.com>
- * @copyright  Copyright (c) WHMCS Limited 2005-2013
- * @license    http://www.whmcs.com/license/ WHMCS Eula
+ * @copyright  Copyright (c) WHMCS Limited 2005-2018
+ * @license    https://www.whmcs.com/license/ WHMCS Eula
  * @version    $Id$
- * @link       http://www.whmcs.com/
+ * @link       https://www.whmcs.com/
  */
 
 if (!defined("WHMCS")) die("This file cannot be accessed directly");
 
-$_LANG['isocode'] = "es_MX";
+$_LANG['locale'] = "es_MX";
  
 $_LANG['accountinfo'] = "Información de tu cuenta";
 $_LANG['accountstats'] = "Estadísticas de tu cuenta";
@@ -67,7 +67,7 @@ $_LANG['announcementsdescription'] = "Ver las noticias más recientes";
 $_LANG['announcementsnone'] = "No hay noticias para mostrar";
 $_LANG['announcementsrss'] = "Ver RSS";
 $_LANG['announcementstitle'] = "Noticias";
-$_LANG['bannedbanexpires'] = "La prohibición vence";
+$_LANG['bannedbanexpires'] = "El baneo vence";
 $_LANG['bannedbanreason'] = "Motivo del baneo";
 $_LANG['bannedhasbeenbanned'] = "ha sido baneada";
 $_LANG['bannedtitle'] = "IP Baneada";
@@ -75,7 +75,7 @@ $_LANG['bannedyourip'] = "Tu IP";
 $_LANG['cartaddons'] = "Complementos";
 $_LANG['cartbrowse'] = "Resumen de Servicios";
 $_LANG['cartconfigdomainextras'] = "Configurar dominios";
-$_LANG['cartconfigoptionsdesc'] = "El Servicio elegido tiene algunas opciones que puedes puede elegir a continuación para personalizar tu orden.";
+$_LANG['cartconfigoptionsdesc'] = "El servicio elegido tiene algunas opciones que puedes puede elegir a continuación para personalizar tu orden.";
 $_LANG['cartconfigserver'] = "Configurar Servidor";
 $_LANG['cartcustomfieldsdesc'] = "El Servicio requiere de información adicional antes de procesar la Orden. Por favor, completa los datos necesarios.";
 $_LANG['cartdomainsconfig'] = "Configuración de Dominios";
@@ -214,6 +214,7 @@ $_LANG['clientareanavsupporttickets'] = "Mis tickets";
 $_LANG['clientareanocontacts'] = "Contacto no encontrado";
 $_LANG['clientareapassword'] = "Contraseña";
 $_LANG['clientareapending'] = "Pendiente";
+$_LANG['clientareapendingregistration'] = "Pendiente por registro";
 $_LANG['clientareapendingtransfer'] = "Pendiente por transferir";
 $_LANG['clientareaphonenumber'] = "Teléfono";
 $_LANG['clientareapostcode'] = "Código Postal";
@@ -261,7 +262,7 @@ $_LANG['contactsubject'] = "Asunto";
 $_LANG['contacttitle'] = "Contacto de Pre-venta";
 $_LANG['continueshopping'] = "Continuar comprando";
 $_LANG['creditcard'] = "Pagar con tarjeta";
-$_LANG['creditcard3dsecure'] = "Como parte de nuestras medidas contra fraude, realizarás el proceso de validación <em>Verified by VISA</em> o <em>MasterCard SecureCode</em> para completar tu pago.<br /><br />No actualices ni vayas atrás en tu navegador para evitar que la transacción sea interrumpida o cancelada.";
+$_LANG['creditcard3dsecure'] = "Como parte de nuestras medidas antifraude, realizarás el proceso de validación <em>Verified by VISA</em> o <em>MasterCard SecureCode</em> para completar tu pago.<br /><br />No recargues la página ni regreses en tu navegador para evitar que la transacción sea interrumpida o cancelada.";
 $_LANG['creditcardcardexpires'] = "Fecha de vencimiento";
 $_LANG['creditcardcardissuenum'] = "Número";
 $_LANG['creditcardcardnumber'] = "Número de tarjeta";
@@ -270,6 +271,7 @@ $_LANG['creditcardcardtype'] = "Tipo de tarjeta";
 $_LANG['creditcardccvinvalid'] = "El código ingresado no es válido";
 $_LANG['creditcardconfirmation'] = "Gracias. Los datos de tu nueva tarjeta han sido aceptados y se ha tomado el primer pago para tu cuenta. Te hemos enviado un email de confirmación.";
 $_LANG['creditcardcvvnumber'] = "Código de seguridad";
+$_LANG['creditcardcvvnumbershort'] = "CVV/CVC2";
 $_LANG['creditcardcvvwhere'] = "¿Dónde encuentro esto?";
 $_LANG['creditcarddeclined'] = "La tarjeta ha sido rechazada. Por favor intenta con otra tarjeta o con otro medio de pago.";
 $_LANG['creditcarddetails'] = "Datos de tarjeta";
@@ -466,7 +468,7 @@ $_LANG['knowledgebasehelpful'] = "¿Te fue útil la respuesta?";
 $_LANG['knowledgebaseintrotext'] = "La base de conocimientos se encuentra organizada en diferentes categorías. Puedes elegir una categoría de abajo o bien, buscar en la base de conocimientos por la respuesta a su pregunta.";
 $_LANG['knowledgebasemore'] = "Más";
 $_LANG['knowledgebaseno'] = "No";
-$_LANG['knowledgebasenoarticles'] = "No se hallaron artículos";
+$_LANG['knowledgebasenoarticles'] = "No se encontraron artículos";
 $_LANG['knowledgebasenorelated'] = "No Hay artículos relacionados";
 $_LANG['knowledgebasepopular'] = "Entradas populares";
 $_LANG['knowledgebaseprint'] = "Imprimir este artículo";
@@ -1009,12 +1011,12 @@ $_LANG['cartdomaininvalid'] = "El dominio introducido no es válido. Introduce s
 $_LANG['dlinvalidlink'] = "El enlace no es válido, por favor contacta a Soporte Técnico";
  
 $_LANG['domaindnsmanagementlaunch'] = "Iniciar Administrador de DNS";
-$_LANG['domainemailforwardinglaunch'] = "Iniciar Administrador de Redirección de Correo";
+$_LANG['domainemailforwardinglaunch'] = "Iniciar administrador de redirección de correo";
  
 # Version 4.5
  
 $_LANG['domaindnspriority'] = "Prioridad";
-$_LANG['domaindnsmxonly'] = "Prioridad de Registro MX Solamente";
+$_LANG['domaindnsmxonly'] = "Prioridad de registro MX solamente";
  
 $_LANG['orderpromoprestart'] = "Esta promoción aún no ha empezado. Intenta más tarde.";
  
@@ -1398,13 +1400,17 @@ $_LANG['yourclientareahostingaddons'] = "Tienes habilitados los siguientes compl
 $_LANG['loginrequired'] = "Inicio de sesión requerido";
 $_LANG['unsubscribe'] = "Anular suscripción";
 $_LANG['emailoptout'] = "Abandonar suscripción";
-$_LANG['newsletterunsubscribe'] = "Confirmar cancelación";
 $_LANG['emailoptoutdesc'] = "Marcar para desuscribirse de nuestros boletines";
 $_LANG['alreadyunsubscribed'] = "Ya te has dado de baja de nuestro boletín.";
 $_LANG['newsletterresubscribe'] = "Si deseas suscribirte de nuevo puedes hacerlo desde la sección %sMis detalles%s en el Área del Cliente en cualquier momento.";
 $_LANG['unsubscribehashinvalid'] = "No ha sido posible completar esta acción, por favor contacta a Soporte.";
-$_LANG['unsubscribesuccess'] = "Has sido removido de nuestra lista";
-$_LANG['newsletterremoved'] = "Gracias, tu email ha sido removido de nuestra lista de envíos.";
+$_LANG['unsubscribesuccess'] = "Has sido removido de nuestro boletín";
+$_LANG['newsletterremoved'] = "Gracias, tu email ha sido removido de nuestro boletín.";
+$_LANG['newslettersubscribed'] = "Te has inscrito correctamente a nuestro boletín.";
+$_LANG['emailMarketingAlreadyOptedIn'] = "Ya estás suscrtito a nuestro boletín.";
+$_LANG['emailMarketingAlreadyOptedOut'] = "Ya te has desuscrito de nuestro boletín.";
+$_LANG['manageSubscription'] = "Gestionar suscripción";
+
 $_LANG['erroroccured'] = "Ha ocurrido un Error";
 $_LANG['pwresetsuccessdesc'] = "Tu contraseña ha sido restaurada. Haz click %saquí%s para continuar al Área del Cliente...";
 $_LANG['pwresetenternewpw'] = "Ingresa tu nueva contraseña.";
@@ -1442,48 +1448,47 @@ $_LANG['twofadisable'] = "Deshabilitar Autenticación de Doble Factor";
 $_LANG['twofaenableclickhere'] = "Click aquí para habilitar";
 $_LANG['twofadisableclickhere'] = "Click aquí para deshabilitar";
 $_LANG['twofaenforced'] = "El administrador del sistema te invita a que habilites Autenticación de Doble Factor antes de continuar. Ésta página te guiará en el proceso de configuración.";
-$_LANG['twofasetup'] = "Proceso de configuración para Autenticación de Doble Factor";
-$_LANG['twofasetupgetstarted'] = "¿Qué Es?";
-$_LANG['twofaactivationintro'] = "El método de Autenticación de Doble Factor agrega una capa extra de protección para los inicios de sesión. Una vez habilitado y configurado, cada vez que inicies sesión te será solicitado ingresar tu usuario y contraseña así como un segundo factor como puede ser un código de seguridad.";
-$_LANG['twofaactivationmultichoice'] = "Para continuar, por favor elige el método de Autenticación de Doble Factor que deseas utilizar de los siguientes.";
-$_LANG['twofadisableintro'] = "Para deshabilitar Autenticación de Doble Factor por favor ingresa tu contraseña en el campo siguiente.";
-$_LANG['twofaactivationerror'] = "Ha ocurrido un error al intentar activar Autenticación de Doble Factor para tu cuenta. Por favor intenta de nuevo.";
+
+$_LANG['twofasetupgetstarted'] = "Comenzar";
+$_LANG['twofaactivationintro'] = "El método de autenticación de doble factor agrega una capa extra de protección para los inicios de sesión. Una vez habilitado y configurado, cada que inicies sesión te será solicitado ingresar tu usuario y contraseña así como un segundo factor como puede ser un código de seguridad.";
+$_LANG['twofaactivationmultichoice'] = "Para continuar, por favor elige el método de autenticación de doble factor que deseas utilizar de los siguientes.";
+$_LANG['twofadisableintro'] = "Para deshabilitar la autenticación de doble factor por favor ingresa tu contraseña en el campo siguiente.";
+$_LANG['twofaactivationerror'] = "Ha ocurrido un error al intentar activar autenticación de doble factor para tu cuenta. Por favor intenta de nuevo.";
 $_LANG['twofamoduleerror'] = "Ha ocurrido un error al cargar el módulo. Por favor intenta de nuevo.";
-$_LANG['twofaactivationcomplete'] = "Autenticación de Doble Factor ha sido habilitada";
-$_LANG['twofadisableconfirmation'] = "Autenticación de Doble Factor ha sido deshabilitada para tu cuenta.";
-$_LANG['twofabackupcodeis'] = "Tu Código de respaldo es";
+$_LANG['twofaactivationcomplete'] = "La autenticación de doble factor ha sido habilitada";
+$_LANG['twofabackupcode'] = "Código de respaldo";
+$_LANG['twofabackupcodeintro'] = "El código de respaldo es necesario para acceder a tu cuenta en caso que no puedas completar la autenticación de doble factor.";
+$_LANG['twofabackupcodeis'] = "Tu código de respaldo es";
 $_LANG['twofanewbackupcodeis'] = "Tu nuevo código de respaldo es";
 $_LANG['twofabackupcodelogin'] = "Ingresa tu código de respaldo arriba para accesar";
-$_LANG['twofabackupcodeexpl'] = "Escribe y guarda este código en un lugar seguro.<br />Será necesario si alguna vez pierdes tu dispositivo usado para Autenticación de Doble Factor o si éste no está disponible.";
-$_LANG['twofaconfirmpw'] = "Ingresa tu Contraseña";
-$_LANG['twofa2ndfactorreq'] = "Tu Autenticación de Doble Factor es requerida para completar tu acceso.";
-$_LANG['twofa2ndfactorincorrect'] = "La Autenticación de Doble Factor ingresada no es correcta. Por favor intenta de nuevo.";
+$_LANG['twofabackupcodeexpl'] = "Guarda este código en un lugar seguro.<br />Será necesario si pierdes tu dispositivo de doble factor o si no lo tienes a la mano.";
+$_LANG['twofaconfirmpw'] = "Ingresa tu contraseña";
+$_LANG['twofa2ndfactorreq'] = "La autenticación de doble factor es requerida para completar tu acceso.";
+$_LANG['twofa2ndfactorincorrect'] = "La autenticación de doble factor ingresada no es correcta. Por favor intenta de nuevo.";
 $_LANG['twofabackupcodereset'] = "Acceso con código de respaldo exitoso. Los códigos de respaldo son válidos una sola vez. Ahora será reiniciado.";
-$_LANG['twofacantaccess2ndfactor'] = "¿No puedes accesar a tu dispositivo Autenticación de Doble Factor?";
-$_LANG['twofaloginusingbackupcode'] = "Accesar utilizando tu código de respaldo";
+$_LANG['twofacantaccess2ndfactor'] = "¿No puedes accesar a tu dispositivo de  autenticación de doble factor?";
+$_LANG['twofaloginusingbackupcode'] = "Igresa utilizando tu código de respaldo";
 $_LANG['twofageneralerror'] = "Ha ocurrido un error al cargar el módulo. Por favor intenta de nuevo.";
  
 $_LANG['continue'] = "Continuar";
 $_LANG['disable'] = "Deshabilitar";
-$_LANG['manage'] = "Gestionar";
+$_LANG['manage'] = "Administrar";
 
 # Version 5.3
 $_LANG['quoteacceptancetitle'] = "Aceptación de cotización";
-$_LANG['quoteacceptancehowto'] = "Para aceptar la cotización, por favor acepta nuestros términos de servicio, los cuales puedes encontrar en";
-$_LANG['quoteacceptancewarning'] = "Por favor coma en cuenta que al aceptar esta cotización se establece un compromiso de pago.";
+$_LANG['quoteacceptancehowto'] = "Para aceptar la cotización, por favor acepta también nuestros términos de servicio, los cuales puedes encontrar en";
+$_LANG['quoteacceptancewarning'] = "Toma en cuenta que al aceptar esta cotización se establece un compromiso de pago.";
 
 $_LANG['contactform'] = "Formulario de contacto";
 
-$_LANG['twoipverificationstep'] = "Verification Step";
-$_LANG['twoipverificationstepmsg'] = "Enter the security code generated by your mobile authenticator app and we'll make sure it's configured correctly before enabling it.";
-$_LANG['twoipverificationerror'] = "It seem's there's a problem...";
-$_LANG['twoipcodemissmatch'] = "The code you entered did not match what was expected. Please try again.";
-$_LANG['twoiptimebasedpassword'] = "Time-based One-Time Password";
-$_LANG['twoiptimebasedexplain'] = "This authentication option get's it's second factor using a time based algorithm.  Your mobile phone can be used to generate the codes.  If you don't already have an app that can do this, we recommend Google Authenticator which is available for iOS, Android and Windows mobile devices.";
-$_LANG['twoipconfigureapp'] = "To configure your authenticator app:";
-$_LANG['twoipconfigurestep1'] = "Begin by selecting to add a new time based token";
-$_LANG['twoipconfigurestep2'] = "Then use your app to scan the barcode below, or alternatively enter this secret key manually: ";
-$_LANG['twoipgdmissing'] = "GD is missing from the PHP build on your server so unable to generate image";
+$_LANG['twoipconnect'] = "Conecta tu app";
+$_LANG['twoipinstruct'] = "Al usar una app de autenticación como %s o %s, escanea el código QR siguiente. ¿Tienes problemas para escanear? Ingresa el siguiente código manualmente:";
+$_LANG['twoipverificationstepmsg'] = "Ingresa el código de 6 dígitos que ha generado tu aplicación para verificar y completar la configuración.";
+$_LANG['twoipenterauth'] = "Ingresa el´código de autenticación";
+$_LANG['twoipgoogleauth'] = "Google Authenticator";
+$_LANG['twoipduo'] = "Duo";
+$_LANG['twoipcodemissmatch'] = "El código que has introducido no coincide con lo que se esperaba. Por favor, inténtalo de nuevo.";
+$_LANG['twoipgdmissing'] = "GD no se encuentra en la instalación de PHP en el servidor, por lo que no es posible generar la imagen";
 
 $_LANG['domaincontactdetails']['First Name'] = "Nombre";
 $_LANG['domaincontactdetails']['Last Name'] = "Apellido";
@@ -1503,9 +1508,9 @@ $_LANG['domaincontactdetails']['City'] = "Ciudad";
 $_LANG['domaincontactdetails']['State'] = "Estado";
 $_LANG['domaincontactdetails']['County'] = "País";
 $_LANG['domaincontactdetails']['Region'] = "Región";
-$_LANG['domaincontactdetails']['Postcode'] = "Código Postal";
-$_LANG['domaincontactdetails']['ZIP Code'] = "Código Postal";
-$_LANG['domaincontactdetails']['ZIP'] = "Código Postal";
+$_LANG['domaincontactdetails']['Postcode'] = "Código postal";
+$_LANG['domaincontactdetails']['ZIP Code'] = "Código postal";
+$_LANG['domaincontactdetails']['ZIP'] = "Código postal";
 $_LANG['domaincontactdetails']['Country'] = "País";
 $_LANG['domaincontactdetails']['Phone'] = "Teléfono";
 $_LANG['domaincontactdetails']['Phone Number'] = "Teléfono";
@@ -1698,12 +1703,9 @@ $_LANG['domainsExpired'] = "Expirado";
 $_LANG['domainsCancelled'] = "Cancelado";
 $_LANG['domainsFraud'] = "Fraude";
 $_LANG['domainsPending'] = "Pendiente";
+$_LANG['domainsPendingRegistration'] = "Registri pendiente";
 $_LANG['domainsPendingTransfer'] = "Transferencia pendiente";
 $_LANG['domainsTransferredAway'] = "Transferidos";
-$_LANG['domainsExpiringInTheNext30Days'] = "Expiran en 30 días";
-$_LANG['domainsExpiringInTheNext90Days'] = "Expiran en 90 días";
-$_LANG['domainsExpiringInTheNext180Days'] = "Expiran en 180 días";
-$_LANG['domainsExpiringInMoreThan180Days'] = "Expiran en más de 180 días";
 
 $_LANG['kbtagcloud'] = "Nube de Etiquetas";
 
@@ -1774,6 +1776,7 @@ $_LANG['clientHomePanels']['affiliateSummary'] = "El saldo de tu comisión actua
 $_LANG['clientHomePanels']['affiliateSummaryWithdrawalReady'] = "Tu saldo actual de comisiones es :commissionBalance. Puedes retirar tus ganancias ahora.";
 
 $_LANG['upgradeNotPossible'] = "No es posible actualizar este producto. Si crees que has llegado a esta página por error, por favor, contacta a soporte. De lo contrario, regresa e inténtalo de nuevo.";
+$_LANG['upgradeSameProductMustExtendCycle'] = "Para actualizar tu ciclo de facturación, por favor elije un ciclo mayor al de tu ciclo actual.";
 
 $_LANG['hostingInfo'] = "Información de hosting";
 $_LANG['additionalInfo'] = "Información adicional";
@@ -1869,21 +1872,21 @@ $_LANG['cPanel']['fileManager'] = "Administrador de archivos";
 $_LANG['cPanel']['backup'] = "Respaldo";
 $_LANG['cPanel']['subdomains'] = "Subdominios";
 $_LANG['cPanel']['addonDomains'] = "Dominios adicionales";
-$_LANG['cPanel']['cronJobs'] = "Cron jobs";
+$_LANG['cPanel']['cronJobs'] = "Cronjobs";
 $_LANG['cPanel']['mysqlDatabases'] = "Bases de datos MySQL";
 $_LANG['cPanel']['phpMyAdmin'] = "phpMyAdmin";
 $_LANG['cPanel']['awstats'] = "Awstats";
 
 $_LANG['cPanel']['createEmailAccount'] = "Crear cuenta de correo electrónico";
 $_LANG['cPanel']['usernamePlaceholder'] = "Nombre";
-$_LANG['cPanel']['passwordPlaceholder'] = "Contraseña deseada";
+$_LANG['cPanel']['passwordPlaceholder'] = "Contraseña";
 $_LANG['cPanel']['create'] = "Crear";
 $_LANG['cPanel']['emailAccountCreateSuccess'] = "Cuenta de correo electrónico creada con éxito.";
 $_LANG['cPanel']['emailAccountCreateFailed'] = "Hubo un error en la creación de la cuenta de correo electrónico: ";
 
 $_LANG['cPanel']['packageNotActive'] = "Este paquete de hosting se encuentra";
 $_LANG['cPanel']['statusPendingNotice'] = "No puedes utilizar esta cuenta hasta que esté activa.";
-$_LANG['cPanel']['statusSuspendedNotice'] = "No puedes utilizar o gestionar este paquete hasta que se haya reactivado.";
+$_LANG['cPanel']['statusSuspendedNotice'] = "No puedes modificar este paquete hasta que se haya reactivado.";
 
 $_LANG['cPanel']['billingOverview'] = "Información de facturación";
 
@@ -1898,7 +1901,7 @@ $_LANG['actionRequiresAtLeastOneDomainSelected'] = "Selecciona al menos un domin
 
 $_LANG['clientAreaProductDownloadsAvailable'] = "Las siguientes descargas se encuentran disponibles para tu servicio";
 $_LANG['clientAreaProductAddonsAvailable'] = "Hay complementos disponibles para tu servicio. <a href=\"cart.php?gid=addons\">Click aquí para ver &amp; orden &raquo;</a>";
-$_LANG['clientAreaSecurityTwoFactorAuthRecommendation'] = "Te recomendamos utilizar la Autenticación de Dos Factores por seguridad.";
+$_LANG['clientAreaSecurityTwoFactorAuthRecommendation'] = "Te recomendamos utilizar la autenticación de doble factor por seguridad.";
 $_LANG['clientAreaSecurityNoSecurityQuestions'] = "El crear una pregunta de seguridad ayuda a proteger tu cuenta de accesos no autorizados y nos permite verificar tu identidad al solicitar modificaciones en la misma.";
 $_LANG['clientAreaSecuritySecurityQuestionOtherError'] = "El crear una pregunta de seguridad ayuda a proteger tu cuenta de accesos no autorizados y nos permite verificar tu identidad al solicitar modificaciones en la misma.";
 
@@ -1913,8 +1916,8 @@ $_LANG['hideMenu'] = "Ocultar menu";
 
 $_LANG['from'] = "Desde";
 $_LANG['featuredProduct'] = "Más popular";
-$_LANG['shoppingCartProductPerMonth'] = "<span>:precio</span>/:countmo";
-$_LANG['shoppingCartProductPerYear'] = "<span>:precio</span>/:countyr";
+$_LANG['shoppingCartProductPerMonth'] = "<span>:price</span>/:countmes";
+$_LANG['shoppingCartProductPerYear'] = "<span>:price</span>/:countanual";
 
 $_LANG['orderForm']['findNewDomain'] = "Encuentra tu nombre de dominio ideal. Ingresa las palabras clave abajo para consultar disponibilidad.";
 $_LANG['orderForm']['transferExistingDomain'] = "Transfiere tus dominios existentes con nosotros y ahorra.";
@@ -1947,9 +1950,9 @@ $_LANG['orderForm']['mediumStrength'] = "Dificultad media";
 $_LANG['orderForm']['paymentDetails'] = "Información de pago";
 $_LANG['orderForm']['preferredPaymentMethod'] = "Elige tu medio de pago preferido.";
 $_LANG['orderForm']['cardNumber'] = "Número de tarjeta";
-$_LANG['orderForm']['cvv'] = "Código de Seguridad CVV";
+$_LANG['orderForm']['cvv'] = "Código de Seguridad";
 $_LANG['orderForm']['additionalNotes'] = "Notas adicionales";
-$_LANG['orderForm']['continueToClientArea'] = "Continuar al Área del Cliente";
+$_LANG['orderForm']['continueToClientArea'] = "Continuar al área del cliente";
 $_LANG['orderForm']['reviewDomainAndAddons'] = "Por favor, revisa el nombre de dominio seleccionado y cualquier complemento que encuentre disponible para él.";
 $_LANG['orderForm']['addToCart'] = "Agregar al carrito";
 $_LANG['orderForm']['addedToCartRemove'] = "Agregado al carrito (eliminar)";
@@ -1965,6 +1968,7 @@ $_LANG['orderForm']['tryRegisteringInstead'] = "Intenta registrar este dominio e
 $_LANG['orderForm']['domainAvailabilityCached'] = "Los resultados de disponibilidad de dominios se almacenan en caché, dominios registrados recientemente puede que se muestren como disponibles.";
 $_LANG['orderForm']['submitTicket'] = "Crear un ticket";
 $_LANG['orderForm']['promotionAccepted'] = "Cupón aceptado. El total de tu orden ha sido actualizado.";
+$_LANG['orderForm']['promoCycles'] = "Expira después de :cycles ciclo(s) de facturación";
 $_LANG['orderForm']['productOptions'] = "Servicio/Opciones";
 $_LANG['orderForm']['qty'] = "Cant.";
 $_LANG['orderForm']['priceCycle'] = "Precio/Ciclo";
@@ -1997,7 +2001,7 @@ $_LANG['cloudSlider']['feature03Description'] = "Descansa tranquilamente sabiend
 $_LANG['cloudSlider']['feature03DescriptionTwo'] = "Una amplia gama de herramientas de seguridad están a tu disposición, incluyendo certificados SSL, configuración de cortafuegos, servicios de monitoreo de seguridad, acceso VPN y más.";
 $_LANG['cloudSlider']['selectProductLevel'] = "¡Selecciona el nivel perfecto para ti!";
 
-$_LANG['domainChecker.additionalPricingOptions'] = "Opciones adicionales de precio para :dominio";
+$_LANG['domainChecker.additionalPricingOptions'] = "Opciones adicionales de precio para :domain";
 
 $_LANG['orderpaymenttermfree'] = "Gratis";
 
@@ -2020,52 +2024,52 @@ $_LANG['sso']['enabled'] = "Inicio de Sesión Simple está activado actualmente 
 $_LANG['sso']['disabled'] = "Inicio de Sesión Simple está desactivado actualmente para tu cuenta.";
 $_LANG['sso']['redirectafterlogin'] = "Serás redirigido después de iniciar sesión";
 
-$_LANG['oauth']['badTwoFactorAuthModule'] = "Falló el módulo de Autenticación de Dos Factores. Por favor, ponte en contacto con soporte.";
+$_LANG['oauth']['badTwoFactorAuthModule'] = "Falló el módulo de autenticación de doble factor. Por favor, ponte en contacto con soporte.";
 $_LANG['oauth']['permAccessNameAndEmail'] = "Ingresa tu nombre y correo electrónico";
 
 $_LANG['errorButTryAgain'] = "Ha ocurrido un error. Intenta de nuevo, por favor.";
-$_LANG['emailSent'] = "Email Enviado";
-$_LANG['verificationKeyExpired'] = "Esta clave verificación de correo ha expirado. Por favor, inicia sesión para solicitar una nueva clave.";
+$_LANG['emailSent'] = "Email enviado";
+$_LANG['verificationKeyExpired'] = "Esta clave de verificación de correo ha expirado. Por favor, inicia sesión para solicitar una nueva clave.";
 $_LANG['emailAddressVerified'] = "Gracias por confirmar tu dirección de correo.";
 $_LANG['emailKeyExpired'] = "Esta clave verificación de correo ha expirado. Por favor, solicita una nueva.";
 $_LANG['verifyEmailAddress'] = "Por favor revisa tu correo y sigue el enlace contenido para verificar tu dirección de email.";
 $_LANG['resendEmail'] = "Reenviar correo de verificación";
 
 // Markdown Editor Help
-$_LANG['markdown']['title'] = "Markdown Guide";
-$_LANG['markdown']['emphasis'] = "Emphasis";
-$_LANG['markdown']['bold'] = "bold";
-$_LANG['markdown']['italics'] = "italics";
-$_LANG['markdown']['strikeThrough'] = "strikethrough";
-$_LANG['markdown']['headers'] = "Headers";
-$_LANG['markdown']['bigHeader'] = "Big header";
-$_LANG['markdown']['mediumHeader'] = "Medium header";
-$_LANG['markdown']['smallHeader'] = "Small header";
-$_LANG['markdown']['tinyHeader'] = "Tiny header";
-$_LANG['markdown']['lists'] = "Lists";
-$_LANG['markdown']['genericListItem'] = "Generic list item";
-$_LANG['markdown']['numberedListItem'] = "Numbered list item";
-$_LANG['markdown']['links'] = "Links";
-$_LANG['markdown']['textToDisplay'] = "Text to display";
-$_LANG['markdown']['exampleLink'] = "http://www.example.com";
-$_LANG['markdown']['quotes'] = "Quotes";
-$_LANG['markdown']['thisIsAQuote'] = "This is a quote.";
-$_LANG['markdown']['quoteMultipleLines'] = "It can span multiple lines!";
-$_LANG['markdown']['tables'] = "Tables";
-$_LANG['markdown']['columnOne'] = "Column 1";
-$_LANG['markdown']['columnTwo'] = "Column 2";
-$_LANG['markdown']['columnThree'] = "Column 3";
-$_LANG['markdown']['withoutAligning'] = "Or without aligning the columns...";
+$_LANG['markdown']['title'] = "Guía de Markdown";
+$_LANG['markdown']['emphasis'] = "Énfasis";
+$_LANG['markdown']['bold'] = "negrita";
+$_LANG['markdown']['italics'] = "cursiva";
+$_LANG['markdown']['strikeThrough'] = "tachado";
+$_LANG['markdown']['headers'] = "Encabezados";
+$_LANG['markdown']['bigHeader'] = "Encabezado grande";
+$_LANG['markdown']['mediumHeader'] = "Encabezado medio";
+$_LANG['markdown']['smallHeader'] = "Encabezado pequeño";
+$_LANG['markdown']['tinyHeader'] = "Encabezado muy pequeño";
+$_LANG['markdown']['lists'] = "Listas";
+$_LANG['markdown']['genericListItem'] = "Lista genérica";
+$_LANG['markdown']['numberedListItem'] = "Lista numerada";
+$_LANG['markdown']['links'] = "Enlaces";
+$_LANG['markdown']['textToDisplay'] = "Texto a mostrar";
+$_LANG['markdown']['exampleLink'] = "https://www.example.com";
+$_LANG['markdown']['quotes'] = "Citas";
+$_LANG['markdown']['thisIsAQuote'] = "Ésta es una cita.";
+$_LANG['markdown']['quoteMultipleLines'] = "Puede abarcar varias líneas!";
+$_LANG['markdown']['tables'] = "Tablas";
+$_LANG['markdown']['columnOne'] = "Columna 1";
+$_LANG['markdown']['columnTwo'] = "Columna 2";
+$_LANG['markdown']['columnThree'] = "Columna 3";
+$_LANG['markdown']['withoutAligning'] = "O sin alinear las columnas...";
 $_LANG['markdown']['john'] = "John";
 $_LANG['markdown']['doe'] = "Doe";
-$_LANG['markdown']['male'] = "Male";
+$_LANG['markdown']['male'] = "Masculino";
 $_LANG['markdown']['mary'] = "Mary";
 $_LANG['markdown']['smith'] = "Smith";
-$_LANG['markdown']['female'] = "Female";
-$_LANG['markdown']['displayingCode'] = "Displaying code";
-$_LANG['markdown']['spanningMultipleLines'] = "Or spanning multiple lines...";
-$_LANG['markdown']['saved'] = "saved";
-$_LANG['markdown']['saving'] = "autosaving";
+$_LANG['markdown']['female'] = "Femenino";
+$_LANG['markdown']['displayingCode'] = "Viendo código";
+$_LANG['markdown']['spanningMultipleLines'] = "O abarcando múltiples líneas...";
+$_LANG['markdown']['saved'] = "guardado";
+$_LANG['markdown']['saving'] = "guardando";
 
 $_LANG['oauth']['authoriseAppToAccess'] = "¿Autorizas a :appName<br />para acceder a tu cuenta?";
 $_LANG['oauth']['willBeAbleTo'] = "Esta aplicación podrá";
@@ -2155,10 +2159,10 @@ $_LANG['pricing']['noExtensionsDefined'] = "No hay extensiones disponibles";
 $_LANG['navStore'] = "Servicios";
 $_LANG['navBrowseProductsServices'] = "Ver todos";
 
-$_LANG['navWebsiteSecurity'] = "Website & Security";
+$_LANG['navWebsiteSecurity'] = "Seguridad";
 $_LANG['navMarketConnectService']['symantec'] = "Certificados SSL";
 $_LANG['navMarketConnectService']['weebly'] = "Website Builder";
-$_LANG['navMarketConnectService']['spamexperts'] = "E-mail Services";
+$_LANG['navMarketConnectService']['spamexperts'] = "Servicios de correo electrónico";
 
 $_LANG['store']['emailServices']['title'] = "E-mail Services";
 $_LANG['store']['ssl']['title'] = "SSL Certificates";
@@ -2189,9 +2193,22 @@ $_LANG['store']['websiteBuilder']['headline'] = "Building a Website Has Never Be
 $_LANG['store']['websiteBuilder']['tagline'] = "Create the perfect site with powerful drag and drop tools";
 $_LANG['store']['websiteBuilder']['introduction'] = "Weebly’s drag and drop website builder makes it easy to create a powerful, professional website without any technical skills. Over 40 million entrepreneurs and small businesses have already used Weebly to build their online presence with a website, blog or store.";
 
-$_LANG['store']['emailServices']['headline'] = "Email Security, Built for You";
-$_LANG['store']['emailServices']['tagline'] = "Take back control of your inbox";
-$_LANG['store']['emailServices']['blockSpamHeadline'] = "Block nearly 100% of viruses, malware and spam before they ever reach your inbox";
+$_LANG['store']['emailServices']['headline'] = "Seguridad de correo electrónico, hecha para usted";
+$_LANG['store']['emailServices']['tagline'] = "Recupere el control de su bandeja de entrada";
+$_LANG['store']['emailServices']['blockSpamHeadline'] = "Bloquee casi el 100% de los virus, malware y spam antes de que lleguen a su bandeja de entrada.";
+
+$_LANG['pricingCycleShort']['monthly'] = "mes";
+$_LANG['pricingCycleShort']['quarterly'] = "3 meses";
+$_LANG['pricingCycleShort']['semiannually'] = "6 meses";
+$_LANG['pricingCycleShort']['annually'] = "año";
+$_LANG['pricingCycleShort']['biennially'] = "2 años";
+$_LANG['pricingCycleShort']['triennially'] = "3 años";
+$_LANG['pricingCycleLong']['monthly'] = "1 mes";
+$_LANG['pricingCycleLong']['quarterly'] = "3 meses";
+$_LANG['pricingCycleLong']['semiannually'] = "6 meses";
+$_LANG['pricingCycleLong']['annually'] = "1 año";
+$_LANG['pricingCycleLong']['biennially'] = "2 años";
+$_LANG['pricingCycleLong']['triennially'] = "3 años";
 
 $_LANG['navManageSsl'] = "Administrar certificados SSL";
 
@@ -2279,10 +2296,10 @@ $_LANG['dateTime']['thu'] = "Jue";
 $_LANG['dateTime']['fri'] = "Vie";
 $_LANG['dateTime']['sat'] = "Sab";
 $_LANG['dateTime']['sun'] = "Dom";
-$_LANG['dateTime']['th'] = "th";
-$_LANG['dateTime']['nd'] = "nd";
-$_LANG['dateTime']['rd'] = "rd";
-$_LANG['dateTime']['st'] = "st";
+$_LANG['dateTime']['th'] = "mo";
+$_LANG['dateTime']['nd'] = "do";
+$_LANG['dateTime']['rd'] = "ro";
+$_LANG['dateTime']['st'] = "ro";
 $_LANG['dateTime']['january'] = "Enero";
 $_LANG['dateTime']['february'] = "Febrero";
 $_LANG['dateTime']['march'] = "Marzo";
@@ -2311,14 +2328,21 @@ $_LANG['dateTime']['AM'] = "AM";
 $_LANG['dateTime']['PM'] = "PM";
 $_LANG['dateTime']['am'] = "am";
 $_LANG['dateTime']['pm'] = "pm";
+$_LANG['dateTime']['day'] = "Día";
+$_LANG['dateTime']['days'] = "Días";
+$_LANG['dateTime']['hour'] = "Hora";
+$_LANG['dateTime']['hours'] = "Horas";
+$_LANG['dateTime']['minute'] = "Minuto";
+$_LANG['dateTime']['minutes'] = "Minutos";
 
 $_LANG['emailMarketing']['joinOurMailingList'] = "Únete a nuestra lista de distribución";
 
 $_LANG['edit'] = "Editar";
 $_LANG['thankYou'] = "Gracias";
+$_LANG['na'] = "N/A";
 
-$_LANG['domainGracePeriodFeeInvoiceItem'] = "Cuota de renovación en periodo de gracia para el dominio :domainName";
-$_LANG['domainRedemptionPeriodFeeInvoiceItem'] = "Cuota de renovación en periodo de rescate para el dominio :domainName";
+$_LANG['domainGracePeriodFeeInvoiceItem'] = "Costo de renovación en periodo de gracia para el dominio :domainName";
+$_LANG['domainRedemptionPeriodFeeInvoiceItem'] = "Costo de renovación en periodo de gracia para el dominio :domainName";
 $_LANG['gracePeriod'] = "Periodo de gracia";
 $_LANG['redemptionPeriod'] = "Periodo de rescate";
 $_LANG['domainsExpiringSoon'] = "Expiran pronto";
@@ -2364,6 +2388,772 @@ $_LANG['upgradeService']['chooseNew'] = "Elegir nuevo plan";
 $_LANG['upgradeService']['currentProduct'] = "Tu plan actual";
 $_LANG['upgradeService']['recommended'] = "Recomendado";
 $_LANG['upgradeService']['select'] = "Seleccionar";
+
+$_LANG['feeds']['itemsInBasket'] = "Tienes <b>:count</b> artículos en tu carrito.";
+
+$_LANG['validation']['accepted'] = "El valor :attribute debe ser aceptado.";
+$_LANG['validation']['active_url'] = "El enlace :attribute no es válido.";
+$_LANG['validation']['after'] = "La fecha :attribute debe ser mayor a :date.";
+$_LANG['validation']['alpha'] = "El valor :attribute solo debe tener letras.";
+$_LANG['validation']['alpha_dash'] = "El valor :attribute solo debe tener letras, números y guiones.";
+$_LANG['validation']['alpha_num'] = "El valor :attribute solo debe tener letras y números.";
+$_LANG['validation']['array'] = "El valor :attribute debe ser un array.";
+$_LANG['validation']['before'] = "El valor :attribute debe ser una fecha anterior a :date.";
+$_LANG['validation']['between']['numeric'] = "El valor :attribute debe estar entre :min y :max.";
+$_LANG['validation']['between']['file'] = "El valor :attribute debe estar entre :min y :max kilobytes.";
+$_LANG['validation']['between']['string'] = "El valor :attribute debe estar entre :min y :max caracteres.";
+$_LANG['validation']['between']['array'] = "El valor :attribute debe estar entre :min y :max valores.";
+$_LANG['validation']['boolean'] = "El campo valor :attribute debe ser verdadero o falso.";
+$_LANG['validation']['confirmed'] = "La confirmación de :attribute no coincide.";
+$_LANG['validation']['date'] = "El valor :attribute no es una fecha válida.";
+$_LANG['validation']['date_format'] = "El valor :attribute no coincide con el formato :format.";
+$_LANG['validation']['different'] = "The valor :attribute y :other deben ser diferentes.";
+$_LANG['validation']['digits'] = "El valor de :attribute debe ser de :digits dígitos.";
+$_LANG['validation']['digits_between'] = "El valor :attribute debe estar entre :min y :max dígitos.";
+$_LANG['validation']['email'] = "El valor :attribute debe ser una dirección de email válida.";
+$_LANG['validation']['exists'] = "El :attribute no es válido.";
+$_LANG['validation']['filled'] = "El campo :attribute es requerido.";
+$_LANG['validation']['image'] = "El valor :attribute debe ser una imagen.";
+$_LANG['validation']['in'] = ":attribute es inválido.";
+$_LANG['validation']['integer'] = "El valor :attribute debe ser una integral.";
+$_LANG['validation']['ip'] = "El valor :attribute debe ser una IP válida.";
+$_LANG['validation']['json'] = "El valor :attribute debe ser un atributo JSON válido.";
+$_LANG['validation']['max']['numeric'] = "El valor :attribute no debe ser mayor a :max.";
+$_LANG['validation']['max']['file'] = "El valor :attribute no debe ser mayor a :max kilobytes.";
+$_LANG['validation']['max']['string'] = "El valor :attribute no debe ser mayor a :max caracteres.";
+$_LANG['validation']['max']['array'] = "El atributo :attribute no debe tener más de :max valores.";
+$_LANG['validation']['mimes'] = "El valor :attribute debe ser de tipo: :values.";
+$_LANG['validation']['min']['numeric'] = "El valor :attribute debe ser mayor de :min.";
+$_LANG['validation']['min']['file'] = "El valor :attribute debe ser mayor a :min kilobytes.";
+$_LANG['validation']['min']['string'] = "El valor :attribute debe ser mayor a :min caracteres.";
+$_LANG['validation']['min']['array'] = "El atributo :attribute debe ser mayor a :min valores.";
+$_LANG['validation']['not_in'] = "El valor :attribute es incorrecto.";
+$_LANG['validation']['numeric'] = "El valor :attribute debe ser un número.";
+$_LANG['validation']['present'] = "El valor :attribute debe estar presente.";
+$_LANG['validation']['regex'] = "El formato de :attribute es inválido.";
+$_LANG['validation']['required'] = "El valor :attribute es requerido.";
+$_LANG['validation']['required_if'] = "El valor :attribute es requerido cuando  :other es :value.";
+$_LANG['validation']['required_unless'] = "El valor :attribute es requerido solo si :other está en :values.";
+$_LANG['validation']['required_with'] = "El valor :attribute es requerido cuando :values está presente.";
+$_LANG['validation']['required_with_all'] = "El valor :attribute es requerido cuando :values están presentes.";
+$_LANG['validation']['required_without'] = "El valor :attribute es requerido cuando :values no están presentes.";
+$_LANG['validation']['required_without_all'] = "El valor :attribute es requerido cuando ninguno de :values están presentes.";
+$_LANG['validation']['same'] = "Los valores :attribute y :other deben coincidir.";
+$_LANG['validation']['size']['numeric'] = "El valor :attribute debe ser :size.";
+$_LANG['validation']['size']['file'] = "El valor :attribute debe ser de :size kilobytes.";
+$_LANG['validation']['size']['string'] = "El valor :attribute debe tener :size caracteres.";
+$_LANG['validation']['size']['array'] = "El valor :attribute debe contener :size artículos.";
+$_LANG['validation']['string'] = ":attribute debe ser una oración.";
+$_LANG['validation']['timezone'] = ":attribute debe ser una zona válida.";
+$_LANG['validation']['unique'] = "El valor :attribute ha sido tomado.";
+$_LANG['validation']['url'] = "El formato de :attribute es inválido.";
+
+$_LANG['orderErrorServerHostnameInvalid'] = "El nombre de host para tu servidor es inválido.";
+$_LANG['orderErrorServerNameserversInvalid'] = "El prefijo de nameserver es inválido.";
+
+$_LANG['checkAll'] = "Marcar todo";
+$_LANG['uncheckAll'] = "Desmarcar todo";
+
+$_LANG['maxmind']['manualReview'] = "Tu orden ha sido detenida para una revisión manual.<br /><br />Si crees que esto ha sido un error, por favor <a href=\"submitticket.php\">crea un ticket </a> con nuestro equipo de Soporte Técnico. Gracias.";
+
+$_LANG['nodomain'] = "No has especificado dominio";
+
+$_LANG['store']['ssl']['cartTitle'] = "Protege tu sitio con un certificado SSL";
+$_LANG['store']['ssl']['cartShortDescription'] = "Agrega un certificado SSL a tu hosting para darles a tus visitantes la confianza que tu sitio es seguro.";
+
+$_LANG['store']['weebly']['cartTitle'] = "Potente creador de sitios";
+$_LANG['store']['weebly']['cartShortDescription'] = "Agrega el creador de sitios web arrastra-y-suelta- Weebly a tu hosting para que puedas crear tu página en instantes.";
+
+$_LANG['store']['spamexperts']['cartTitle'] = "SpamExperts seguridad en correo electrónico";
+$_LANG['store']['spamexperts']['cartShortDescription'] = "Agrega seguridad y archivado profesional de correo electrónico a tu dominio para proteger tu correo electrónico contra ataques y malware o archiva todos tus correos.";
+
+$_LANG['store']['sitelock']['cartTitle'] = "SiteLock seguridad web";
+
+$_LANG['store']['ssl']['promo']['sidebar']['title'] = "Agregar certificado SSL a tu sitio";
+$_LANG['store']['ssl']['promo']['sidebar']['body'] = "Activar el ícono del candado the padlock icon y protege tu privacidad de usuario";
+
+$_LANG['store']['weebly']['promo']['sidebar']['title'] = "Potente creador de sitios";
+$_LANG['store']['weebly']['promo']['sidebar']['body'] = "Crea tu sitio en minutos con Weebly";
+
+$_LANG['store']['spamexperts']['promo']['sidebar']['title'] = "Obtén protección contra SPAM";
+$_LANG['store']['spamexperts']['promo']['sidebar']['body'] = "Detén el spam con filtrado profesional de correo no deseado";
+
+$_LANG['store']['sitelock']['promo']['sidebar']['title'] = "Protección Malware";
+$_LANG['store']['sitelock']['promo']['sidebar']['body'] = "Encuentra malware automáticamente y protege tu reputación en línea";
+
+$_LANG['store']['recommendedForYou'] = "Recomendado para ti";
+$_LANG['store']['lastChance'] = "Última oportunidad";
+
+$_LANG['domains']['importantReminder'] = "Recordatorio importante";
+$_LANG['domains']['irtpNotice'] = "Los cambios que has realizado habilitarán el bloqueo de transferencia IRTP para este dominio.";
+$_LANG['domains']['optOut'] = "Exclusión del bloqueo de transferencia (si está disponible)";
+$_LANG['domains']['optOutReason'] = "Motivo de salida (opcional)";
+$_LANG['domains']['contactChangePending'] = "Cambio de contactos pendiente";
+$_LANG['domains']['verificationRequired'] = "Verificación requerida";
+$_LANG['domains']['contactsChanged'] = "Una solicitud para cambiar la información de WHOIS ha activado el proceso de verificación de contacto. Se ha enviado un correo electrónico al propietario del dominio registrado para aprobar los cambios.";
+$_LANG['domains']['contactsChangedDate'] = "Una solicitud para cambiar la información de WHOIS ha activado el proceso de verificación de contacto. Se ha enviado un correo electrónico al propietario del dominio registrado para aprobar los cambios. Esta acción debe ser completada antes de :date.";
+$_LANG['domains']['newRegistration'] = "Se ha enviado un correo electrónico al propietario del dominio registrado. La verificación debe ser completada para evitar suspensión.";
+$_LANG['domains']['newRegistrationDate'] = "Se ha enviado un correo electrónico al propietario del dominio registrado. La verificación debe ser completada antes de :date para evitar suspensión.";
+$_LANG['domains']['irtpLockEnabled'] = "Bloqueo de transferencia IRTP";
+$_LANG['domains']['irtpLockDescription'] = "Este dominio se encuentra bloqueado para transferencia debido a una modificación reciente en nombre de contacto o nuevo registro.";
+$_LANG['domains']['irtpLockDescriptionDate'] = "Este dominio se encuentra bloqueado para transferencia debido a una modificación reciente en nombre de contacto o nuevo registro. La fecha de vencimiento es :date.";
+$_LANG['domains']['resendNotification'] = "Reenviar correo de verificación";
+$_LANG['domains']['resendNotificationQuestion'] = "¿Estás seguro de querer enviar nuevamente el correo?";
+$_LANG['domains']['resendNotificationSuccess'] = "El correo electrónico de verificación ha sido enviado nuevamente.";
+$_LANG['domains']['modifyPending'] = "Verificación requerida";
+$_LANG['domains']['changePending'] = "El cambio realizado ha activado el proceso de verificación de contacto. Se ha enviado un correo electrónico de verificación de propiedad a :email. Por favor, haz clic en el enlace del correo para aplicar los cambios.";
+$_LANG['domains']['changePendingDate'] = "El cambio realizado ha activado el proceso de verificación de contacto. Se ha enviado un correo electrónico de verificación de propiedad a :email. Por favor, haz click en el enlace del correo dentro de los próximos :days días para aplicar los cambios.";
+$_LANG['domains']['changePendingFormRequired'] = "Tu solicitud de cambio de contacto Registrante ha sido enviada correctamente. Ahora debes completar la forma de <strong>Cambio de Registrante</strong>. Por favor, visita :form, llena la forma siguiendo las instrucciones y envíanoslo para finalizar el proceso.";
+
+$_LANG['getStartedNow'] = "Inicia ahora";
+$_LANG['notificationsnew'] = "Nuevo";
+
+$_LANG['store']['websiteBuilder']['tab']['overview'] = "Vista general";
+$_LANG['store']['websiteBuilder']['tab']['features'] = "Características";
+$_LANG['store']['websiteBuilder']['tab']['pricing'] = "Precio";
+$_LANG['store']['websiteBuilder']['tab']['faq'] = "Preguntas frecuentes";
+$_LANG['store']['websiteBuilder']['ddEditor'] = "Creador de arrastrar y soltar";
+$_LANG['store']['websiteBuilder']['ddEditorDescription'] = "El creador de arrastrar y soltar te permite crear un sitio profesional sin conocimientos técnicos previos. Elige distintos elementos para agregar fotos, mapas o videos con solo arrastrar y soltar en el lugar deseado, sin salir de tu navegador web..";
+$_LANG['store']['websiteBuilder']['features']['builder'] = "Creador";
+$_LANG['store']['websiteBuilder']['features']['builderDescription'] = "Crea el sitio perfecto con las herramientas de arrastrar y soltar";
+$_LANG['store']['websiteBuilder']['features']['ecommerce'] = "E-Commerce";
+$_LANG['store']['websiteBuilder']['features']['ecommerceDescription'] = "Solución completa de e-commerce para crecer tu negocio en línea";
+$_LANG['store']['websiteBuilder']['features']['forms'] = "Formas";
+$_LANG['store']['websiteBuilder']['features']['formsDescription'] = "Crea formas de contacto, de reservación y encuestas";
+$_LANG['store']['websiteBuilder']['features']['templates'] = "Plantillas";
+$_LANG['store']['websiteBuilder']['features']['templatesDescription'] = "Plantillas profesionales totalmente personalizables";
+$_LANG['store']['websiteBuilder']['features']['gallery'] = "Fotos";
+$_LANG['store']['websiteBuilder']['features']['galleryDescription'] = "Crea galerías, carruseles de imágenes y fondos personalizados";
+$_LANG['store']['websiteBuilder']['features']['blogging'] = "Blogging";
+$_LANG['store']['websiteBuilder']['features']['bloggingDescription'] = "Crea un blog genial en minutos";
+$_LANG['store']['websiteBuilder']['features']['video'] = "Video";
+$_LANG['store']['websiteBuilder']['features']['videoDescription'] = "Inserta videos de los servicios más populares u hospeda los tuyos";
+$_LANG['store']['websiteBuilder']['features']['seo'] = "SEO";
+$_LANG['store']['websiteBuilder']['features']['seoDescription'] = "Potentes herramientas SEO para que los buscadores listen tu sitio";
+$_LANG['store']['websiteBuilder']['pricing']['lite']['headline'] = "Prueba Weebly";
+$_LANG['store']['websiteBuilder']['pricing']['lite']['tagline'] = "Todo lo que necesitas para crear tu sitio de una sola página";
+$_LANG['store']['websiteBuilder']['pricing']['idealFor'] = "Ideal para :for";
+$_LANG['store']['websiteBuilder']['pricing']['siteFeatures'] = "Características del sitio";
+$_LANG['store']['websiteBuilder']['pricing']['eCommerceFeatures'] = "Características eCommerce";
+$_LANG['store']['websiteBuilder']['pricing']['features']['ddBuilder'] = "Creador de arrastra y suelta";
+$_LANG['store']['websiteBuilder']['pricing']['features']['pages'] = "Páginas ilimitadas";
+$_LANG['store']['websiteBuilder']['pricing']['features']['noAds'] = "Sin anuncios de Weebly";
+$_LANG['store']['websiteBuilder']['pricing']['features']['search'] = "Búsqueda en tu sutio";
+$_LANG['store']['websiteBuilder']['pricing']['features']['passwords'] = "Protección por contraseña";
+$_LANG['store']['websiteBuilder']['pricing']['features']['backgrounds'] = "Fondos con videos";
+$_LANG['store']['websiteBuilder']['pricing']['features']['hdVideo'] = "Video y audio en HD";
+$_LANG['store']['websiteBuilder']['pricing']['features']['memberCount'] = "Hasta 100 miembros";
+$_LANG['store']['websiteBuilder']['pricing']['features']['registration'] = "Registro de miembros";
+$_LANG['store']['websiteBuilder']['pricing']['features']['emailCampaigns'] = "Campañas de correo electrónico";
+$_LANG['store']['websiteBuilder']['pricing']['features']['3pcFee'] = "Comisión por transacción del 3%";
+$_LANG['store']['websiteBuilder']['pricing']['features']['tenProducts'] = "Hasta 10 productos";
+$_LANG['store']['websiteBuilder']['pricing']['features']['checkoutOnWeebly'] = "Pago en Weebly.com";
+$_LANG['store']['websiteBuilder']['pricing']['features']['twentyFiveProducts'] = "Hasta 25 productos";
+$_LANG['store']['websiteBuilder']['pricing']['features']['0pcFee'] = "Comisión por transacción del 0%";
+$_LANG['store']['websiteBuilder']['pricing']['features']['unlimitedProducts'] = "Productos ilimitados";
+$_LANG['store']['websiteBuilder']['pricing']['features']['checkoutDomain'] = "Pago en tu propio sitio";
+$_LANG['store']['websiteBuilder']['pricing']['features']['inventory'] = "Gestión de inventario";
+$_LANG['store']['websiteBuilder']['pricing']['features']['coupons'] = "Cupones";
+$_LANG['store']['websiteBuilder']['pricing']['features']['tax'] = "Calculadora de impuestos";
+$_LANG['store']['websiteBuilder']['pricing']['features']['shipping'] = "Costos de envío en tiempo real";
+$_LANG['store']['websiteBuilder']['pricing']['features']['abandonedCart'] = "Seguimiento a carritos de compra abandonados";
+$_LANG['store']['websiteBuilder']['pricing']['features']['giftCards'] = "Tarjeta de regalo";
+$_LANG['store']['websiteBuilder']['adminPreview'] = "Los planes Weebly que actives se mostrarán aquí";
+$_LANG['store']['websiteBuilder']['faq']['title'] = "Preguntas frecuentes";
+$_LANG['store']['websiteBuilder']['faq']['q1'] = "¿Puedo crear un blog?";
+$_LANG['store']['websiteBuilder']['faq']['q2'] = "¿Mi sitio será mobile friendly?";
+$_LANG['store']['websiteBuilder']['faq']['q3'] = "¿Puedo agregar foros a mi página?";
+$_LANG['store']['websiteBuilder']['faq']['q4'] = "¿Puedo vender productos en mi página?";
+$_LANG['store']['websiteBuilder']['faq']['q5'] = "¿Puedo añadir formas a mi página?";
+$_LANG['store']['websiteBuilder']['faq']['q6'] = "¿Cómo puedo agregar mi sitio a motores de búsqueda?";
+$_LANG['store']['websiteBuilder']['faq']['q7'] = "¿Hay múltiples estilos para elegir?";
+$_LANG['store']['websiteBuilder']['faq']['q8'] = "¿Puedo mejorar mi plan?";
+$_LANG['store']['websiteBuilder']['faq']['a1'] = "Sí, el creador de sitios te permite agregar funciones de blog.";
+$_LANG['store']['websiteBuilder']['faq']['a2'] = "Sí, todos los sitios creados con Weebly son optimizados para móviles.";
+$_LANG['store']['websiteBuilder']['faq']['a3'] = "Sí, puedes agregar fotos a tu sitio, pero videos e imágenes en HD solo están disponibles en los planes Pro y Business.";
+$_LANG['store']['websiteBuilder']['faq']['a4'] = "Sí, la funcionalidad eCommerce está incluida en todos los planes, pero el´número de productos que puedes ofrecer varía de acuerdo al mismo.";
+$_LANG['store']['websiteBuilder']['faq']['a5'] = "Sí, el creador de Weebly te permite crear formas de contacto, reservaciones, encuestas y más.";
+$_LANG['store']['websiteBuilder']['faq']['a6'] = "Todos los sitios creados con Weebly incluyen poderosas herramientas SEO que te ayudan a mejorar tu posicionamiento en buscadores.";
+$_LANG['store']['websiteBuilder']['faq']['a7'] = "Sí, hay múltiples plantillas para elegir.";
+$_LANG['store']['websiteBuilder']['faq']['a8'] = "Sí, puedes mejorar tu plan en cualquier momento. Solo inicia sesión en tu cuenta y elige el plan que desees.";
+$_LANG['store']['websiteBuilder']['trust'] = "Utilizado por más de 40,000,000 personas en todo el mundo";
+$_LANG['store']['toggleNav'] = "Cambiar navegación";
+$_LANG['store']['websiteBuilder']['upgrade']['title'] = "Mejorar Weebly";
+$_LANG['store']['websiteBuilder']['upgrade']['required'] = "Mejora requerida";
+$_LANG['store']['websiteBuilder']['upgrade']['requiredDescription'] = "Para acceder a esta función, debes mejorar tu plan Weebly.";
+$_LANG['store']['websiteBuilder']['upgrade']['recommended'] = "El plan recomendado es el mostrado.";
+$_LANG['store']['websiteBuilder']['upgrade']['login'] = "Para ver las opciones disponibles, por favor, inicia sesión.";
+$_LANG['store']['websiteBuilder']['upgrade']['no'] = "No hay mejora disponible.";
+$_LANG['store']['websiteBuilder']['upgrade']['noUpgrade'] = "No hay mejora disponible por el momento.";
+$_LANG['store']['websiteBuilder']['upgrade']['submitTicket'] = "Contacta a soporte";
+$_LANG['store']['websiteBuilder']['upgrade']['to'] = "Mejorar a :product por :amount";
+$_LANG['store']['websiteBuilder']['upgrade']['noPlans'] = "No hay planes activos";
+$_LANG['store']['websiteBuilder']['upgrade']['loggedInAs'] = "Actualmente iniciaste sesión como :email";
+$_LANG['store']['websiteBuilder']['upgrade']['switchUser'] = "Salir/cambiar de usuario";
+
+$_LANG['tax']['taxLabel'] = "ID de impuestos";
+$_LANG['tax']['vatLabel'] = "Número VAT";
+$_LANG['tax']['errorInvalid'] = "El ID :taxLabel no es válido";
+
+$_LANG['fraud']['checkConfiguration'] = "Se ha producido un error en la validación de fraude. Por favor, contacta a soporte.";
+$_LANG['fraud']['title'] = "Validación de fraude";
+$_LANG['fraud']['error'] = "Error";
+$_LANG['fraud']['manualReview'] = "Tu orden ha sido retenida para una revisión manual. <br /> <br /> Si crees que has recibido este mensaje por error, te pedimos una disculpa y te solicitamos y <a href=\"submitticket.php\">crear un ticket de soporte. </a>. Gracias.";
+$_LANG['fraud']['highFraudRiskScore'] = "Tu orden ha sido marcada como potencialmente de alto riesgo y, por lo tanto, ha sido retenida para revisión manual. <br /> <br /> Si crees que has recibido este mensaje por error, te pedimos una disculpa y te solicitamos y <a href=\"submitticket.php\">crear un ticket de soporte. </a>. Gracias.";
+$_LANG['fraud']['countryMismatch'] = "El país de tu dirección IP no coincide con el país de la dirección de facturación que has ingresado, por lo que desafortunadamente no poder aceptar tu orden.";
+$_LANG['fraud']['highRiskCountry'] = "Lamentablemente, no podemos aceptar tu orden ya que ha habido una gran cantidad de actividades fraudulentas que vienen de tu país. Si deseas utilizar un medio de pago alternativo, por favor contáctanos.";
+$_LANG['fraud']['anonymousProxy'] = "No se permite que las órdenes se realicen mediante un proxy anónimo";
+
+$_LANG['navMarketConnectService']['codeguard'] = "Respaldo de sitios web";
+$_LANG['store']['codeguard']['cartTitle'] = "Respaldo CodeGuard";
+$_LANG['store']['codeguard']['cartShortDescription'] = "El más rápido y más confiable servicio de respaldo web, que monitorea todos tus cambios diariamente.";
+$_LANG['store']['codeGuard']['title'] = "CodeGuard Backup";
+$_LANG['store']['codeGuard']['headline'] = "Protect <span>your website</span> with daily automated backups";
+$_LANG['store']['codeGuard']['tagline'] = "Get protection against viruses, hackers and even your own code accidentally breaking your site with CodeGuard Website Backup.";
+$_LANG['store']['codeGuard']['tab']['overview'] = "Overview";
+$_LANG['store']['codeGuard']['tab']['pricing'] = "Pricing";
+$_LANG['store']['codeGuard']['tab']['features'] = "Features";
+$_LANG['store']['codeGuard']['tab']['faq'] = "FAQ";
+$_LANG['store']['codeGuard']['leadTitle'] = "<strong><em>Every 0.65 seconds</em></strong>, a new web page is infected with malware.";
+$_LANG['store']['codeGuard']['leadText1'] = "Protect your site from <strong>data loss and corruption</strong>, as well as against threats from <strong>viruses, hackers and malware</strong> with Daily Automated Website Backups from CodeGuard.";
+$_LANG['store']['codeGuard']['leadText2'] = "With CodeGuard Website Backup, your website is backed up daily and if disaster strikes, you can restore your site to a previous point in time at the click of a button.";
+$_LANG['store']['codeGuard']['dailyBackup'] = "Automatic Daily Backups";
+$_LANG['store']['codeGuard']['malwareProtection'] = "Malware Detection and Restore";
+$_LANG['store']['codeGuard']['timeMachine'] = "Website Time Machine";
+$_LANG['store']['codeGuard']['wpPlugin'] = "WordPress Plugin Updates";
+$_LANG['store']['codeGuard']['changeAlerts'] = "File Change Alert Monitoring";
+$_LANG['store']['codeGuard']['features']['dailyBackup'] = "Daily Automatic Website Backups";
+$_LANG['store']['codeGuard']['features']['dailyBackupDescription'] = "Secure your website with automated daily backups stored offsite with built-in redundancy.";
+$_LANG['store']['codeGuard']['features']['unlimitedFiles'] = "Unlimited Files & Databases";
+$_LANG['store']['codeGuard']['features']['unlimitedFilesDescription'] = "Backup an unlimited number of files and databases - you are restricted only by the storage space you use.";
+$_LANG['store']['codeGuard']['features']['oneClickRestore'] = "One-Click Restores";
+$_LANG['store']['codeGuard']['features']['oneClickRestoreDescription'] = "A simple restore process makes it easy to rollback a single file or your entire website to a previous version.";
+$_LANG['store']['codeGuard']['features']['malwareMonitoring'] = "Malware Monitoring";
+$_LANG['store']['codeGuard']['features']['malwareMonitoringDescription'] = "Rest easy knowing CodeGuard is diligently checking your site for changes every day.";
+$_LANG['store']['codeGuard']['features']['wp'] = "Automatic WordPress Updates";
+$_LANG['store']['codeGuard']['features']['wpDescription'] = "Automatically update WordPress and its plugins to keep it secure with auto recovery in case of problems.";
+$_LANG['store']['codeGuard']['features']['fileMonitoring'] = "File Change Monitoring";
+$_LANG['store']['codeGuard']['features']['fileMonitoringDescription'] = "Get notified by email anytime something changes within the source code of your site.";
+$_LANG['store']['codeGuard']['features']['servers'] = "Staging of Restores";
+$_LANG['store']['codeGuard']['features']['serversDescription'] = "Quickly test any backed up site with simple and automated staging prior to restore.";
+$_LANG['store']['codeGuard']['features']['email'] = "Email Backup";
+$_LANG['store']['codeGuard']['features']['emailDescription'] = "Get protection for your emails too as they are backed up as part of your websites files.";
+$_LANG['store']['codeGuard']['features']['api'] = "Full Automation";
+$_LANG['store']['codeGuard']['features']['apiDescription'] = "Completely hands free setup and ongoing backups with automated notifications if things go wrong.";
+$_LANG['store']['codeGuard']['chooseBackupPlan'] = "Choose Backup Storage";
+$_LANG['store']['codeGuard']['faq']['title'] = "Frequently Asked Questions";
+$_LANG['store']['codeGuard']['faq']['q1'] = "What is CodeGuard?";
+$_LANG['store']['codeGuard']['faq']['a1'] = "CodeGuard is a fully automated website backup service that gives you complete protection against data loss and malware.";
+$_LANG['store']['codeGuard']['faq']['q2'] = "Why do I need CodeGuard?";
+$_LANG['store']['codeGuard']['faq']['a2'] = "CodeGuard provides an independent offsite backup solution for your website along with daily monitoring to ensure your website is online and malware free.";
+$_LANG['store']['codeGuard']['faq']['q3'] = "How does it work?";
+$_LANG['store']['codeGuard']['faq']['a3'] = "CodeGuard takes daily automated snapshots of your website. Using these snapshots, you can restore your entire site or a specific file to an earlier version at any time.";
+$_LANG['store']['codeGuard']['faq']['q4'] = "What if I run out of storage?";
+$_LANG['store']['codeGuard']['faq']['a4'] = "Switching plans is easy! You can upgrade and increase your disk storage allowance in just a few simple clicks via our client area.";
+$_LANG['store']['codeGuard']['faq']['q5'] = "Where are backups stored?";
+$_LANG['store']['codeGuard']['faq']['a5'] = "Backups are stored on Amazon Web Services Simple Storage System which provides market leading resiliance and redundancy for your backups.";
+$_LANG['store']['codeGuard']['faq']['q6'] = "Are the backups encrypted?";
+$_LANG['store']['codeGuard']['faq']['a6'] = "Yes, backups are stored encrypted using the AES-256 Encryption Standard.";
+$_LANG['store']['codeGuard']['faq']['q7'] = "Do you backup databases?";
+$_LANG['store']['codeGuard']['faq']['a7'] = "Yes, databases can be backed up also. Database backups are supported for MySQL and MSSQL databases.";
+$_LANG['store']['codeGuard']['faq']['q8'] = "What is File Change Alert Monitoring?";
+$_LANG['store']['codeGuard']['faq']['a8'] = "CodeGuard can monitor and notify you by email when your website changes to alert you to new threats and malware.";
+$_LANG['store']['codeGuard']['faq']['q9'] = "What happens if my site gets infected?";
+$_LANG['store']['codeGuard']['faq']['a9'] = "With CodeGuard's daily snapshots, if your website gets attacked, you can restore to a previous uninfected version at any time.";
+$_LANG['store']['codeGuard']['adminPreview'] = "CodeGuard plans you activate will be displayed here";
+
+$_LANG['store']['codeguard']['promo']['sidebar']['title'] = "Añadir copia de seguridad para el sitio web";
+$_LANG['store']['codeguard']['promo']['sidebar']['body'] = "Proteja su sitio web con copias de seguridad automatizadas diarias";
+
+$_LANG['marketConnect']['codeguard']['manage'] = "Inicia sesión en el panel de control de CodeGuard";
+
+$_LANG['sslState']['sslInactive'] = "No hemos detectado un certificado SSL. Haz click aquí para ver las opciones de SSL";
+$_LANG['sslState']['sslActive'] = "Se detectó un certificado SSL válido. Vence :expiry";
+$_LANG['sslState']['sslUnknown'] = "No se puede validar el estado SSL";
+$_LANG['sslState']['validSsl'] = "Certificado SSL válido detectado";
+$_LANG['sslState']['noSsl'] = "No se detectó certificado SSL";
+$_LANG['sslState']['sslInactiveService'] = "Servicio inactivo";
+$_LANG['sslState']['sslInactiveDomain'] = "Dominio inactivo";
+$_LANG['sslState']['startDate'] = "Fecha de emisión del certificado SSL";
+$_LANG['sslState']['expiryDate'] = "Fecha de vencimiento del certificado SSL";
+$_LANG['sslState']['issuerName'] = "Nombre del emisor del certificado SSL";
+$_LANG['sslState']['sslStatus'] = "Estado del certificado SSL";
+
+$_LANG['generatePassword']['btnLabel'] = "Generar contraseña";
+$_LANG['generatePassword']['title'] = "Generar contraseña";
+$_LANG['generatePassword']['lengthValidationError'] = "La longitud de contraseña debe ser entre 8 y 64 caracteres";
+$_LANG['generatePassword']['pwLength'] = "Longitud de contraseña";
+$_LANG['generatePassword']['generatedPw'] = "Contraseña generada";
+$_LANG['generatePassword']['generateNew'] = "Generar nueva contraseña";
+$_LANG['generatePassword']['copyAndInsert'] = "Copiar al portapapeles e insertar";
+
+$_LANG['close'] = "Cerrar";
+
+$_LANG['setupMandate'] = "Configurar mandato para pago";
+
+$_LANG['invoicePaymentPendingCleared'] = "Tu pago está siendo procesado y será aplicado al terminar.";
+$_LANG['invoicePaymentAutoWhenDue'] = "Tu pago será solicitado automáticamente al vencimiento.";
+
+$_LANG['support']['attachmentsRemoved'] = "Eliminado debido a la inactividad del ticket";
+$_LANG['unpaidInvoiceAlert'] = "Tienes una factura no pagada. Realiza tu pago ahora para evitar interrupciones en tu servicio.";
+$_LANG['overdueInvoiceAlert'] = "Tienes una factura vencida.";
+$_LANG['payInvoice'] = "Pagar factura";
+
+$_LANG['close'] = "Cerrar";
+$_LANG['submit'] = "Enviar";
+$_LANG['finish'] = "Terminar";
+
+$_LANG['twofanowenabled'] = "Two-Factor Authentication is now enabled";
+$_LANG['twofacurrently'] = "Two-factor authentication is currently";
+$_LANG['enabled'] = "Habilitado";
+$_LANG['disabled'] = "Deshabilitado";
+
+$_LANG['copyrightFooterNotice'] = "Copyright &copy; 2010 - :year :company.";
+
+$_LANG['paymentMethods']['title'] = "Métodos de pago";
+$_LANG['paymentMethods']['intro'] = "Una vista general de tus métodos de pago y ajustes.";
+$_LANG['paymentMethods']['description'] = "Descripción";
+$_LANG['paymentMethods']['cardDescription'] = "Descripción de tarjeta";
+$_LANG['paymentMethods']['descriptionInput'] = "Ingresa un nombre para esta tarjeta";
+$_LANG['paymentMethods']['fieldRequired'] = "Este campo es requerido.";
+$_LANG['paymentMethods']['close'] = "Cerrar";
+$_LANG['paymentMethods']['saveChanges'] = "Guardar cambios";
+
+$_LANG['paymentMethods']['addedSuccess'] = "Método de pago agregado con éxito";
+$_LANG['paymentMethods']['addFailed'] = "El método de pago no ha sido agregado con éxito. Por favor, intenta de nuevo.";
+$_LANG['paymentMethods']['updateSuccess'] = "Método de pago actualizado con éxito";
+$_LANG['paymentMethods']['saveFailed'] = "Ha ocurrido un error al guardar cambios. Por favor, intenta de nuevo.";
+$_LANG['paymentMethods']['defaultUpdateSuccess'] = "Método de pago predeterminado actualizado con éxito";
+$_LANG['paymentMethods']['defaultUpdateFailed'] = "No ha sido posible actualizar el método de pago predeterminado. Por favor, intenta de nuevo.";
+$_LANG['paymentMethods']['deleteSuccess'] = "Método de pago eliminado con éxito";
+$_LANG['paymentMethods']['deleteFailed'] = "No ha sido posible eliminar el método de pago seleccionado. Por favor, intenta de nuevo.";
+$_LANG['paymentMethods']['addNewCC'] = "Agregar nueva tarjeta de crédito";
+$_LANG['paymentMethods']['addNewBank'] = "Agregar cuenta bancaria";
+$_LANG['paymentMethods']['name'] = "Nombre";
+$_LANG['paymentMethods']['status'] = "Estado";
+$_LANG['paymentMethods']['actions'] = "Acciones";
+$_LANG['paymentMethods']['default'] = "Predeterminado";
+$_LANG['paymentMethods']['setAsDefault'] = "Establecer como predeterminado";
+$_LANG['paymentMethods']['edit'] = "Editar";
+$_LANG['paymentMethods']['delete'] = "Eliminar";
+$_LANG['paymentMethods']['noPaymentMethodsCreated'] = "No hay métodos de pago creados aun";
+$_LANG['paymentMethods']['areYouSure'] = "¿Estás seguro?";
+$_LANG['paymentMethods']['deletePaymentMethodConfirm'] = "¿Estás seguro de eliminar el método de pago seleccionado? No es posible deshacer esta acción.";
+$_LANG['paymentMethods']['type'] = "Tipo";
+$_LANG['paymentMethods']['requestCancelled'] = "Solicitud cancelada";
+$_LANG['paymentMethods']['retry'] = "Reintentar";
+$_LANG['paymentMethods']['creditCardChangesWontBeReflected'] = "Los cambios que realices serán guardados, pero no todos los cambios se verán reflejados en el Área del Cliente.";
+
+$_LANG['paymentMethodsManage']['editPaymentMethod'] = "Cambiar método de pago";
+$_LANG['paymentMethodsManage']['addPaymentMethod'] = "Agregar nuevo método de pago";
+$_LANG['paymentMethodsManage']['invalidCardDetails'] = "El número de tarjeta es inválido. Por favor, intenta de nuevo.";
+$_LANG['paymentMethodsManage']['creditCard'] = "Tarjeta de crédito";
+$_LANG['paymentMethodsManage']['bankAccount'] = "Cuenta bancaria";
+$_LANG['paymentMethodsManage']['optional'] = "(opcional)";
+$_LANG['paymentMethodsManage']['cardNumberNotValid'] = "El número de tarjeta no es válido.";
+$_LANG['paymentMethodsManage']['expiryDateNotValid'] = "La fecha de vencimiento no es válida.";
+$_LANG['paymentMethodsManage']['cvcNumberNotValid'] = "El código de seguridad no es válido.";
+$_LANG['paymentMethodsManage']['accountType'] = "Tipo de cuenta";
+$_LANG['paymentMethodsManage']['checking'] = "Cheques";
+$_LANG['paymentMethodsManage']['savings'] = "Ahorros";
+$_LANG['paymentMethodsManage']['accountHolderName'] = "Titular de la cuenta";
+$_LANG['paymentMethodsManage']['bankName'] = "Banco";
+$_LANG['paymentMethodsManage']['sortCodeRoutingNumber'] = "Sort Code/Routing Number";
+$_LANG['paymentMethodsManage']['routingNumberNotValid'] = "The routing number you entered does not appear to be valid.";
+$_LANG['paymentMethodsManage']['accountNumber'] = "Número de cuenta";
+$_LANG['paymentMethodsManage']['accountNumberNotValid'] = "The bank account number you entered does not appear to be valid.";
+$_LANG['paymentMethodsManage']['addNewAddress'] = "Agregar nueva dirección";
+$_LANG['paymentMethodsManage']['addNewBillingAddress'] = "Agregar nueva dirección de facturación";
+$_LANG['paymentMethodsManage']['unsupportedCardType'] = "Por el momento no aceptamos el tipo de tarjeta ingresado. Por favor, intenta con otra tarjeta.";
+
+$_LANG['store']['ssl']['shared']['pricing'] = "Certificate Pricing";
+$_LANG['store']['ssl']['shared']['encryption256'] = "256-Bit Encryption";
+$_LANG['store']['ssl']['shared']['issuanceTime'] = "Issueance Time";
+$_LANG['store']['ssl']['shared']['greatFor'] = "Great For";
+$_LANG['store']['ssl']['shared']['warrantyValue'] = "Warranty Value";
+$_LANG['store']['ssl']['shared']['siteSeal'] = "Trust Site Seal";
+$_LANG['store']['ssl']['shared']['freeReissues'] = "Free Reissues";
+$_LANG['store']['ssl']['shared']['browserSupport'] = "Browser Support";
+$_LANG['store']['ssl']['shared']['oneYear'] = "1 Year";
+$_LANG['store']['ssl']['shared']['twoYears'] = "2 Years";
+$_LANG['store']['ssl']['shared']['noProducts'] = "SSL Certificate products you activate will be displayed here";
+$_LANG['store']['ssl']['shared']['helpMeChoose'] = "Not sure which to choose? Let us help you decide";
+$_LANG['store']['ssl']['shared']['ev']['visualVerification'] = "Prominent Visual Identity";
+$_LANG['store']['ssl']['shared']['ev']['visualVerificationDescription'] = "Increase trust and confidence in your website with full identity verification and prominent visual features.";
+$_LANG['store']['ssl']['shared']['ev']['warranty'] = "$1.5m Warranty";
+$_LANG['store']['ssl']['shared']['ev']['warrantyDescription'] = "EV Certificates come with a $1.5m warranty that covers data breaches caused due to a certificate flaw.";
+$_LANG['store']['ssl']['shared']['ev']['issuance'] = "Issued in 2-3 Days";
+$_LANG['store']['ssl']['shared']['ov']['ov'] = "Organization Validated";
+$_LANG['store']['ssl']['shared']['ov']['ovDescription'] = "With an OV SSL Certificate, the identity of the company or organization that holds the certificate is validated, providing more trust for end users.";
+$_LANG['store']['ssl']['shared']['ov']['warranty'] = "$1.25m Warranty";
+$_LANG['store']['ssl']['shared']['ov']['warrantyDescription'] = "OV Certificates come with a $1.25m warranty that covers data breaches caused due to a certificate flaw.";
+$_LANG['store']['ssl']['shared']['ov']['issuance'] = "Issued in 1-2 Days";
+$_LANG['store']['ssl']['shared']['delivery'] = "Delivered in Minutes for Instant Protection";
+$_LANG['store']['ssl']['shared']['deliveryDescription'] = "The fastest and most affordable way to activate SSL protection for your website, issuance is quick and often fully automated.";
+$_LANG['store']['ssl']['shared']['siteSeal'] = "Trust Site Seal";
+$_LANG['store']['ssl']['shared']['siteSealDescription'] = "Our SSL Certificates come with a trust seal that has been proven to increase visitor confidence and customer conversions.";
+$_LANG['store']['ssl']['shared']['googleRanking'] = "Boost your Google Ranking";
+$_LANG['store']['ssl']['shared']['googleRankingDescription'] = "Google uses SSL/HTTPS as a factor in determining search engine ranking. Add SSL today to help boost your Google ranking!";
+$_LANG['store']['ssl']['shared']['features'] = "Certificate Features";
+$_LANG['store']['ssl']['shared']['encryptData'] = "Encrypt sensitive data";
+$_LANG['store']['ssl']['shared']['secureTransactions'] = "Secure online transactions";
+$_LANG['store']['ssl']['shared']['legitimacy'] = "Prove legitimacy";
+$_LANG['store']['ssl']['shared']['fastestSsl'] = "Strongest & Fastest SSL";
+$_LANG['store']['ssl']['shared']['browserCompatability'] = "99.9% Browser Compatibility";
+$_LANG['store']['ssl']['shared']['seoRank'] = "Increase SEO rank";
+$_LANG['store']['ssl']['shared']['issuance'] = "Instant Issuance";
+$_LANG['store']['ssl']['shared']['trusted'] = "Our SSL certificates are from some of the most trusted brands in Online Security.";
+$_LANG['store']['ssl']['shared']['dvSsl'] = "Standard SSL (DV)";
+$_LANG['store']['ssl']['shared']['ovSsl'] = "Organisation Validation (OV)";
+$_LANG['store']['ssl']['shared']['evSsl'] = "Extended Validation (EV)";
+$_LANG['store']['ssl']['shared']['wildcardSsl'] = "Wildcard";
+$_LANG['store']['ssl']['shared']['switch'] = "Switch to Us";
+$_LANG['store']['ssl']['competitiveUpgrades']['switch'] = "Switch to DigiCert SSL";
+$_LANG['store']['ssl']['competitiveUpgrades']['replace'] = "Replace your current SSL Certificate without losing any time or money";
+$_LANG['store']['ssl']['competitiveUpgrades']['buyWithTime'] = "Buy a new SSL Certificate from us and we'll add any remaining time you have on your current SSL Certificate up to a maximum of an additional 12 months";
+$_LANG['store']['ssl']['competitiveUpgrades']['foc'] = "free of charge";
+$_LANG['store']['ssl']['competitiveUpgrades']['exampleScenario'] = "Example Scenario";
+$_LANG['store']['ssl']['competitiveUpgrades']['example']['line1'] = "Your current 2 year certificate has 11 months left to run.";
+$_LANG['store']['ssl']['competitiveUpgrades']['example']['line2'] = "You make the switch and your new certificate will be valid for <strong>1 year AND 11 months</strong>.";
+$_LANG['store']['ssl']['competitiveUpgrades']['example']['line3'] = "The fee for the new certificate will <strong>ONLY</strong> be for 1 year.";
+$_LANG['store']['ssl']['competitiveUpgrades']['eligibilityCheck'] = "This special upgrade offer is available for SSL Certificates issued by one of the supported competitor SSL providers*. Enter your domain name below to validate your eligibility and see how much you could save.";
+$_LANG['store']['ssl']['competitiveUpgrades']['checkFailed'] = "Unable to connect to the validation API. Please try again later or contact support.";
+$_LANG['store']['ssl']['competitiveUpgrades']['eligible'] = "Congratulations! Your domain is eligible for the DigiCert Competitive Upgrade Offer.";
+$_LANG['store']['ssl']['competitiveUpgrades']['expirationDate'] = "Current Expiration Date";
+$_LANG['store']['ssl']['competitiveUpgrades']['monthsRemaining'] = "Months Remaining";
+$_LANG['store']['ssl']['competitiveUpgrades']['months'] = ":months Months";
+$_LANG['store']['ssl']['competitiveUpgrades']['maxMonths'] = "Maximum of 12 months offered";
+$_LANG['store']['ssl']['competitiveUpgrades']['freeExtension'] = "Free Extension Eligibility";
+$_LANG['store']['ssl']['competitiveUpgrades']['saving'] = "Potential Saving";
+$_LANG['store']['ssl']['competitiveUpgrades']['savingInfomation'] = "Save up to <strong>:saveAmount</strong> on a new certificate!";
+$_LANG['store']['ssl']['competitiveUpgrades']['continue'] = "Continue to Choose SSL Certificate";
+$_LANG['store']['ssl']['competitiveUpgrades']['ineligible'] = "Unfortunately the domain you entered is not eligible for the DigiCert Competitive Upgrade Offer. Please verify the domain is entered correctly and has an active and current SSL Certificate from one of the supported vendors";
+$_LANG['store']['ssl']['competitiveUpgrades']['validate'] = "Validate";
+$_LANG['store']['ssl']['competitiveUpgrades']['competitors'] = "Offer valid for Comodo, GlobalSign, Entrust, and GoDaddy SSL Certificates.";
+$_LANG['store']['ssl']['competitiveUpgrades']['enterDomain'] = "Enter your domain here";
+$_LANG['store']['ssl']['useCases']['title'] = "Recommended Use Cases";
+$_LANG['store']['ssl']['useCases']['blogs'] = "Blogs";
+$_LANG['store']['ssl']['useCases']['infoPages'] = "Informational<br>Pages";
+$_LANG['store']['ssl']['useCases']['serverComms'] = "Server-to-server<br>Communications";
+$_LANG['store']['ssl']['useCases']['criticalDomains'] = "Business-critical<br>domains";
+$_LANG['store']['ssl']['useCases']['ecommerce'] = "eCommerce";
+$_LANG['store']['ssl']['useCases']['signupPages'] = "New account<br>signup pages";
+$_LANG['store']['ssl']['useCases']['loginPages'] = "Login Pages";
+$_LANG['store']['ssl']['useCases']['intranetSites'] = "Intranet Sites";
+$_LANG['store']['ssl']['useCases']['webmail'] = "Webmail";
+$_LANG['store']['ssl']['ov']['orgInfo'] = "Contains your Authenticated Organization Details";
+$_LANG['store']['ssl']['ov']['orgInfoDescription'] = "Certificate details indicate your website is using an Organization Validated SSL Certificate and include the issuing CA, validity status and expiration date.";
+$_LANG['store']['ssl']['ev']['orgInfo'] = "Contains Your EV Authenticated Organization Details";
+$_LANG['store']['ssl']['ev']['orgInfoDescription'] = "Certificate details indicate your website is using an Extended Validation SSL Certificate and include the issuing CA, validity status, and expiration date.";
+$_LANG['store']['ssl']['landingPage']['title'] = "SSL Certificates";
+$_LANG['store']['ssl']['landingPage']['tagline1'] = "Secure your site and add trust & confidence for your visitors.";
+$_LANG['store']['ssl']['landingPage']['tagline2'] = "With a range of brands, we have the right certificate for all your site security needs";
+$_LANG['store']['ssl']['landingPage']['chooseLevel'] = "Choose your level of validation";
+$_LANG['store']['ssl']['landingPage']['dv'] = "Domain Validation (DV)";
+$_LANG['store']['ssl']['landingPage']['dvSubtitle'] = "Basic Security";
+$_LANG['store']['ssl']['landingPage']['dvInformation'] = "Domain validation only. Issued in minutes. Ideal for blogs, social media & personal websites.";
+$_LANG['store']['ssl']['landingPage']['ov'] = "Organization Validation (OV)";
+$_LANG['store']['ssl']['landingPage']['ovSubtitle'] = "Strong business level SSL";
+$_LANG['store']['ssl']['landingPage']['ovInformation'] = "Basic identity verification. Ideal for small business websites and pages accepting sensitive information.";
+$_LANG['store']['ssl']['landingPage']['ev'] = "Extended Validation (EV)";
+$_LANG['store']['ssl']['landingPage']['evSubtitle'] = "Maximum Protection & Trust";
+$_LANG['store']['ssl']['landingPage']['evInformation'] = "Full identity verification. Ideal for Business & Ecommerce sites looking to provide maximum visitor confidence.";
+$_LANG['store']['ssl']['landingPage']['buy'] = "Buy";
+$_LANG['store']['ssl']['landingPage']['what'] = "What is SSL?";
+$_LANG['store']['ssl']['landingPage']['whatInfo'] = "SSL Certificates are fundamental to internet security. They are used to establish an encrypted connection and allow data to be transmitted securely between a browser or user's computer and a server or website.";
+$_LANG['store']['ssl']['landingPage']['secureConnection'] = "Establishes a secure connection between a browser and a server";
+$_LANG['store']['ssl']['landingPage']['encrypts'] = "Encrypts communication to protect sensitive information your customers provide to you";
+$_LANG['store']['ssl']['landingPage']['padlock'] = "Places a padlock next to your web address in the browser";
+$_LANG['store']['ssl']['landingPage']['authenticates'] = "Authenticates an organization's identity";
+$_LANG['store']['ssl']['landingPage']['certTypeInfo'] = "<a href=\":dvLink\">Standard SSL (Domain Validated)</a> Certificates are the easiest and most common type of SSL certificate. <a href=\":ovLink\">OV</a> and <a href=\":evLink\">EV Certificates</a> also authenticate the identity of the company or organization that holds the certificate providing more trust to end users.";
+$_LANG['store']['ssl']['landingPage']['benefits']['title'] = "Improve Your Search Engine Ranking";
+$_LANG['store']['ssl']['landingPage']['benefits']['subtitle'] = "Establish trust and online security for your website visitors and business.";
+$_LANG['store']['ssl']['landingPage']['benefits']['higherResults'] = "Google wants to make the web safer and a big part of that involves making sure that the sites people access via Google are secure. That's why websites using SSL have been shown to benefit from higher ranking in search results.";
+$_LANG['store']['ssl']['landingPage']['benefits']['reasons'] = "There's also a lot more reasons why you should consider adding SSL to your website";
+$_LANG['store']['ssl']['landingPage']['benefits']['encrypt'] = "Encrypt sensitive data";
+$_LANG['store']['ssl']['landingPage']['benefits']['privacy'] = "Protect user privacy";
+$_LANG['store']['ssl']['landingPage']['benefits']['secure'] = "Secure online transactions";
+$_LANG['store']['ssl']['landingPage']['benefits']['https'] = "Activate HTTPS and the lock icon";
+$_LANG['store']['ssl']['landingPage']['benefits']['legitimacy'] = "Prove legitimacy";
+$_LANG['store']['ssl']['landingPage']['benefits']['seo'] = "Increase SEO rank";
+$_LANG['store']['ssl']['landingPage']['browser']['title'] = "Browsers have changed, don't get left behind";
+$_LANG['store']['ssl']['landingPage']['browser']['insecureNotice'] = "Web pages not served via HTTPS are now being displayed as ‘not secure’ in <strong>Google Chrome</strong> and <strong>Mozilla Firefox</strong>. Don't let your website be one of them. Add SSL today.";
+$_LANG['store']['ssl']['landingPage']['competitiveUpgrade'] = "Upgrade with us and get up to an additional 12 months free.";
+$_LANG['store']['ssl']['landingPage']['browser']['competitiveUpgrade'] = "Upgrade with us and get up to an additional 12 months free.";
+$_LANG['store']['ssl']['landingPage']['evs']['upgradeTitle'] = "Upgrade to Extended Validation SSL";
+$_LANG['store']['ssl']['landingPage']['evs']['description'] = "While all SSL certificates use similar methods to protect and validate your data, the level of trust and assertion they provide varies.";
+$_LANG['store']['ssl']['landingPage']['evs']['whatIs'] = "<strong>Extended Validation Certificates</strong> offer the highest level of validation and trust. They validate and display the name and location of companies and organisations to give customers added confidence when dealing with businesses online.";
+$_LANG['store']['ssl']['landingPage']['evs']['learn'] = "Learn more about Extended Validation SSL Certificates";
+$_LANG['store']['ssl']['landingPage']['help']['title'] = "Help Me Choose The Right Type of Certificate";
+$_LANG['store']['ssl']['landingPage']['help']['guide'] = "While the need for online security is universal, not all SSL Certificates are created equal. The guide below is designed to help you decide which type of certificate is right for you.";
+$_LANG['store']['ssl']['landingPage']['help']['dv']['title'] = "Domain Validation (DV)";
+$_LANG['store']['ssl']['landingPage']['help']['dv']['verify'] = "Verifies ownership and control of the domain name only";
+$_LANG['store']['ssl']['landingPage']['help']['dv']['issued'] = "Issued in minutes";
+$_LANG['store']['ssl']['landingPage']['help']['dv']['compliance'] = "Maintains browser compliance";
+$_LANG['store']['ssl']['landingPage']['help']['dv']['for'] = "Ideal for non-critical web pages";
+$_LANG['store']['ssl']['landingPage']['help']['dv']['type'] = "Think of DV like getting a library card—no confirmation of who you really are, very minimal requirements to obtain and issued very quickly.";
+$_LANG['store']['ssl']['landingPage']['help']['dv']['browse'] = "Browse Domain Validation Certificates";
+$_LANG['store']['ssl']['landingPage']['help']['ov']['title'] = "Organization Validation (OV)";
+$_LANG['store']['ssl']['landingPage']['help']['ov']['verify'] = "Enhanced validation including authenticating the identity of the applicant";
+$_LANG['store']['ssl']['landingPage']['help']['ov']['issued'] = "Issued within one day";
+$_LANG['store']['ssl']['landingPage']['help']['ov']['compliance'] = "Maintains browser compliance";
+$_LANG['store']['ssl']['landingPage']['help']['ov']['for'] = "Ideal for more sensitive webpages such as login pages";
+$_LANG['store']['ssl']['landingPage']['help']['ov']['type'] = "Think of OV like getting a driver’s license—more hoops to jump through than a library card but more trusted as a form of identification.";
+$_LANG['store']['ssl']['landingPage']['help']['ov']['browse'] = "Browse Organization Validation Certificates";
+$_LANG['store']['ssl']['landingPage']['help']['ev']['title'] = "Extended Validation (EV)";
+$_LANG['store']['ssl']['landingPage']['help']['ev']['verify'] = "Standards-based approach to authentication, representing the highest level of authentication for SSL Certificates";
+$_LANG['store']['ssl']['landingPage']['help']['ev']['issued'] = "Typically issued within 1-3 days";
+$_LANG['store']['ssl']['landingPage']['help']['ev']['compliance'] = "Maintains browser and other industry compliance";
+$_LANG['store']['ssl']['landingPage']['help']['ev']['for'] = "Ideal for sensitive webpages including ecommerce, online banking, account signups";
+$_LANG['store']['ssl']['landingPage']['help']['ev']['type'] = "Think of EV like getting a passport—much more stringent processes, longer lead times and more verification of who you are than with a library card or driver’s license. Recognized internationally as the most trusted way to verify your identity.";
+$_LANG['store']['ssl']['landingPage']['help']['ev']['browse'] = "Browse Extended Validation Certificates";
+$_LANG['store']['ssl']['landingPage']['viewAll'] = "View All SSL Certificates";
+$_LANG['store']['ssl']['landingPage']['buyNow'] = "Buy Now";
+$_LANG['store']['ssl']['landingPage']['faq']['title'] = "FAQ";
+$_LANG['store']['ssl']['landingPage']['faq']['q1'] = "What is an SSL Certificate?";
+$_LANG['store']['ssl']['landingPage']['faq']['a1'] = "SSL Certificates enable data encryption on the internet and allow data to be transmitted securely from a web server to a browser. With SSL, your website can use the https protocol and will display a padlock in end users web browsers to indicate the connection is secure.";
+$_LANG['store']['ssl']['landingPage']['faq']['q2'] = "Why do I need an SSL Certificate?";
+$_LANG['store']['ssl']['landingPage']['faq']['a2'] = "SSL Certificates are an essential part of the internet. They not only encrypt communication between your computer and the server where a website is located, but they also provide verification that a site is what it claims to be.";
+$_LANG['store']['ssl']['landingPage']['faq']['q3'] = "What are the different types of SSL?";
+$_LANG['store']['ssl']['landingPage']['faq']['a3'] = "There are 3 different levels of vetting that SSL Certificates are based upon. Domain Validated (DV) , Organization Validated (OV), and Extended Validation (EV). The major difference between the types of certificate relates to the information the Certificate Authority, RapidSSL, GeoTrust and DigiCert, requires and validates in order to issue a certificate. The higher levels of certificate require more information, and often is displayed in the browser bar. EV SSL for example turns the browser bar green and displays the organization name to visitors to generate more trust.";
+$_LANG['store']['ssl']['landingPage']['faq']['q4'] = "What is a Wildcard SSL Certificate";
+$_LANG['store']['ssl']['landingPage']['faq']['a4'] = "A Wildcard SSL certificate provides the same encryption and authentication features as other SSL certificates but can also be applied to an unlimited number of subdomains of a website. A Wildcard SSL certificate supports the root domain (example.com) as well as its subdomains.";
+$_LANG['store']['ssl']['landingPage']['faq']['q5'] = "What are the advantages of an EV SSL Certificate?";
+$_LANG['store']['ssl']['landingPage']['faq']['a5'] = "EV, or Extended Validation, is the highest class of SSL available today and gives more credibility and trust to your website than other SSL Certificates. They include features such as the green address bar and display of your company name that have been proven to boost trust and consumer confidence.";
+$_LANG['store']['ssl']['landingPage']['faq']['q6'] = "What if I already have an SSL Certificate?";
+$_LANG['store']['ssl']['landingPage']['faq']['a6'] = "You can switch to us at any time.  We offer highly competitive pricing and if you already have an existing certificate, we'll add any remaining validity that you have on your existing competitor SSL Certificate up to a maximum of an additional 12 months.";
+
+$_LANG['creditCardStore'] = "Guardar tarjeta para pagos futuros";
+
+$_LANG['support']['ccRecipients'] = "Destinatarios CC";
+$_LANG['support']['addCcRecipients'] = "Ingresa tu direción de correo electrónico";
+$_LANG['support']['removeRecipient'] = "Quitar destinatario";
+$_LANG['support']['successDelete'] = "El destinatario cc :email ha sido eliminado";
+$_LANG['support']['deleteEmailNotExisting'] = "El correo :email no es un destinatario cc";
+$_LANG['support']['addEmailExists'] = "El correo :email es ya un destinatariocc";
+$_LANG['support']['successAdd'] = "El destinatario cc :email ha sido agregado";
+$_LANG['support']['clientEmail'] = "La dirección del cliente no puede ser agregada como destinatario cc";
+$_LANG['support']['emailNotPossible'] = "No es posible agregar la dirección :email como destinatario cc";
+$_LANG['support']['invalidEmail'] = "Dirección de correo electrónico no válida.";
+
+$_LANG['confirmAndPay'] = "Confirmar y pagar";
+$_LANG['paymentPreApproved'] = "Pago preaprobado con :gateway";
+$_LANG['expressCheckoutInfo'] = "Tu pago está pendiente de confirmación. Esto generalmente toma un par de minutos en completarse. Si no recibes un correo en los próximos minutos, por favor, contacta a soporte.";
+$_LANG['expressCheckoutError'] = "Ha ocurrido un error al procesar tu pago. Por favor, contacta a soporte.";
+
+$_LANG['subscription']['active'] = "Tienes una suscripción activa";
+$_LANG['subscription']['manual'] = "Puedes realizar un pago, pero este será tomado como un pago en exceso.";
+$_LANG['subscription']['moreDetails'] = "Más detalles";
+$_LANG['subscription']['makePayment'] = "Realizar un pago";
+$_LANG['subscription']['paypalDetails'] = "Detalles de suscripción PayPal";
+$_LANG['subscription']['subscriptionWarning'] = "Cualquier suscripción activa mostrada abajo será aplicada a esta factura automáticamente. Si algún pago resulta duplicado, el monto será acreditado y aplicará para el siguiente pago.";
+$_LANG['subscription']['subscriptionid'] = "ID de suscripción";
+$_LANG['subscription']['status'] = "Estado de suscripción";
+$_LANG['subscription']['lastpayment'] = "Último pago";
+$_LANG['subscription']['nextpaymentdate'] = "Siguiente pago";
+$_LANG['subscription']['subscriptionstartdate'] = "Inicio de suscripción";
+$_LANG['subscription']['failedpaymentscount'] = "Intentos fallidos de pago";
+$_LANG['subscription']['errorFetchingDetails'] = "Ha ocurrido un error al intentar obtener la información de la suscripción. Por favor, contacta a soporte.";
+
+$_LANG['navMarketConnectService']['sitelockvpn'] = "VPN";
+$_LANG['store']['sitelockvpn']['title'] = "SiteLock VPN";
+$_LANG['store']['sitelockvpn']['tagline'] = "Get unlimited access to an Internet free of privacy concerns, content restrictions or data caps.";
+$_LANG['store']['sitelockvpn']['manageService'] = "Manage your SiteLock VPN Service";
+$_LANG['store']['sitelockvpn']['cartShortDescription'] = "SiteLock VPN allows anonymous, encrypted browsing sessions over any network connection.";
+$_LANG['store']['sitelockvpn']['cartTitle'] = "SiteLock VPN";
+$_LANG['store']['sitelockvpn']['promo']['sidebar']['title'] = "Virtual Private Network";
+$_LANG['store']['sitelockvpn']['promo']['sidebar']['body'] = "Anonymize your browsing";
+$_LANG['store']['sitelockvpn']['adminPreview'] = "SiteLock VPN plans you activate will be displayed here";
+
+$_LANG['store']['sitelockvpn']['title'] = "SiteLock VPN";
+$_LANG['store']['sitelockvpn']['getStarted'] = "Get Started";
+$_LANG['store']['sitelockvpn']['subtitle1'] = "Secure & Protect";
+$_LANG['store']['sitelockvpn']['subtitle2'] = "Your Web Browsing";
+$_LANG['store']['sitelockvpn']['tagline1'] = "High speed, secure, and easy";
+$_LANG['store']['sitelockvpn']['tagline2'] = "to use with instant setup.";
+$_LANG['store']['sitelockvpn']['feature1']['title'] = "Get secure and private access to the internet.";
+$_LANG['store']['sitelockvpn']['feature1']['subtitle'] = "<strong>Shield your personal data</strong> and get peace of mind each time you use public Wi-Fi, access personal and work accounts on the road, or just want to keep your browsing history to yourself.";
+$_LANG['store']['sitelockvpn']['feature1']['highlights']['one'] = "Hide your IP address";
+$_LANG['store']['sitelockvpn']['feature1']['highlights']['two'] = "Protect your online identity";
+$_LANG['store']['sitelockvpn']['feature1']['highlights']['three'] = "No activity logs to track browsing";
+$_LANG['store']['sitelockvpn']['feature1']['highlights']['four'] = "Secure your bank transactions";
+$_LANG['store']['sitelockvpn']['feature1']['highlights']['five'] = "Use military-grade encryption";
+$_LANG['store']['sitelockvpn']['feature1']['highlights']['six'] = "Be safe on public Wi-Fi networks";
+$_LANG['store']['sitelockvpn']['feature2']['title'] = "Stream and browse without limitations.";
+$_LANG['store']['sitelockvpn']['feature2']['subtitle'] = "From video streaming to social networks, <strong>our VPN works anywhere</strong> and allows you to access the sites and apps you love. Plus fast speeds for easy browsing and no more buffering or long waits.";
+$_LANG['store']['sitelockvpn']['feature2']['highlights']['one'] = "Access blocked websites";
+$_LANG['store']['sitelockvpn']['feature2']['highlights']['two'] = "Watch streaming services anywhere";
+$_LANG['store']['sitelockvpn']['feature2']['highlights']['three'] = "Bypass local internet censorship";
+$_LANG['store']['sitelockvpn']['feature2']['highlights']['four'] = "Play region-locked games";
+$_LANG['store']['sitelockvpn']['feature2']['highlights']['five'] = "Get better deals online";
+$_LANG['store']['sitelockvpn']['feature2']['highlights']['six'] = "Stay private and anonymous";
+$_LANG['store']['sitelockvpn']['feature3']['title'] = "Protect all your devices.";
+$_LANG['store']['sitelockvpn']['feature3']['subtitle'] = "<strong>1-click-setup VPN</strong> for Mac, Windows, iOS, and Android.";
+$_LANG['store']['sitelockvpn']['feature3']['subtitle2'] = "Access the internet from anywhere, whether you're on a computer, smartphone, or tablet. Auto-configuration is supported for all major platforms<sup>*</sup> allowing you to surf unrestricted with no coding or complex setup required. <strong>Simply download and connect.</strong>";
+$_LANG['store']['sitelockvpn']['feature3']['subtitle3'] = "* Other platforms can be configured manually.";
+$_LANG['store']['sitelockvpn']['pricing']['oneSubscription'] = "Just one subscription covers and protects";
+$_LANG['store']['sitelockvpn']['pricing']['fiveDevices'] = "up to 5 devices simultaneously.";
+$_LANG['store']['sitelockvpn']['pricing']['features']['noRestrictions'] = "No Restrictions";
+$_LANG['store']['sitelockvpn']['pricing']['features']['highSpeed'] = "High Speed Network";
+$_LANG['store']['sitelockvpn']['pricing']['features']['unlimited'] = "Unlimited bandwidth";
+$_LANG['store']['sitelockvpn']['pricing']['features']['encryption'] = "256-bit AES Encryption";
+$_LANG['store']['sitelockvpn']['plans']['features']['allInclude'] = "All Subscription Plans include";
+$_LANG['store']['sitelockvpn']['plans']['features']['noRestrictions'] = "No Restrictions";
+$_LANG['store']['sitelockvpn']['plans']['features']['highSpeed'] = "High Speed Network";
+$_LANG['store']['sitelockvpn']['plans']['features']['unlimited'] = "Unlimited bandwidth";
+$_LANG['store']['sitelockvpn']['plans']['features']['encryption'] = "256-bit AES Encryption";
+$_LANG['store']['sitelockvpn']['plans']['features']['protocol'] = "OpenVPN, L2TP-IPsec<br>and PPTP protocols";
+$_LANG['store']['sitelockvpn']['plans']['features']['simultaneous'] = "Simultaneous connections on<br>up to 5 devices";
+$_LANG['store']['sitelockvpn']['plans']['features']['apps'] = "Apps for Windows, Mac, iOS,<br>Android, and Linux";
+$_LANG['store']['sitelockvpn']['plans']['features']['switching'] = "Unlimited Server Switching";
+$_LANG['store']['sitelockvpn']['plans']['features']['countries'] = "40+ Countries";
+$_LANG['store']['sitelockvpn']['plans']['features']['servers'] = "1000+ Servers";
+$_LANG['store']['sitelockvpn']['plans']['features']['support'] = "24/7 US Based Support";
+$_LANG['store']['sitelockvpn']['world']['features']['title'] = "Blazing fast speeds, unlimited bandwidth";
+$_LANG['store']['sitelockvpn']['world']['features']['servers'] = "servers";
+$_LANG['store']['sitelockvpn']['world']['features']['countries'] = "countries";
+$_LANG['store']['sitelockvpn']['world']['features']['unlimited'] = "Unlimited";
+$_LANG['store']['sitelockvpn']['world']['features']['bandwidth'] = "bandwidth";
+
+$_LANG['store']['noDomain'] = "No se requiere dominio";
+$_LANG['store']['noDomainRequired'] = "No es necesario contar con un dominio para este producto";
+$_LANG['back'] = "Atrás";
+
+$_LANG['errors']['badRequest'] = "Bad Request";
+$_LANG['errors']['badRequestTryAgain'] = "Ha ocurrido un error. Por favor, intenta de nuevo.";
+
+$_LANG['paymentMethods']['iban'] = "IBAN";
+$_LANG['paymentMethods']['mandateAcceptance'] = "By providing your IBAN and confirming this payment, you are authorizing :companyName and Stripe, our payment service provider, to send instructions to your bank to debit your account and your bank to debit your account in accordance with those instructions. You are entitled to a refund from your bank under the terms and conditions of your agreement with your bank. A refund must be claimed within 8 weeks starting from the date on which your account was debited.";
+
+$_LANG['metrics']['title'] = "Métricas";
+$_LANG['metrics']['explanation'] = "This product has usage-based billing charges in addition to the base price. Usage metrics and their pricing information are displayed below.";
+$_LANG['metrics']['from'] = "De";
+$_LANG['metrics']['to'] = "A";
+$_LANG['metrics']['startingQuantity'] = "Starting Quantity";
+$_LANG['metrics']['unit'] = "Unit";
+$_LANG['metrics']['pricePerUnit'] = "Price Per Unit";
+$_LANG['metrics']['pricePer'] = "Price Per";
+$_LANG['metrics']['viewPricing'] = "View Pricing";
+$_LANG['metrics']['pricing'] = "Pricing";
+$_LANG['metrics']['startingFrom'] = "Starting from";
+$_LANG['metrics']['pricingschema']['simple']['info'] = "This item has a singular pricing structure";
+$_LANG['metrics']['pricingschema']['simple']['detail'] = "The per unit price is consistent regardless of volume.";
+$_LANG['metrics']['pricingschema']['grad']['info'] = "This item has a graduated pricing structure.";
+$_LANG['metrics']['pricingschema']['grad']['detail'] = "The per unit price is per consumption range. The total charge is the sum of the range calculations.";
+$_LANG['metrics']['pricingschema']['flat']['info'] = "This item has a flat volume pricing structure.";
+$_LANG['metrics']['pricingschema']['flat']['detail'] = "The per unit price is determined by the total volume consumed.";
+$_LANG['metrics']['previousUsage'] = "Previous Usage";
+$_LANG['metrics']['currentUsage'] = "Current Usage";
+$_LANG['metrics']['lastUpdated'] = "Last Update";
+$_LANG['metrics']['metric'] = "Metric";
+$_LANG['metrics']['billing'] = "Billing";
+$_LANG['metrics']['includedNotCounted'] = "Included";
+$_LANG['metrics']['includedInBase'] = "included in the base price";
+
+$_LANG['metrics']['invoiceitem']['perunit'] = ":consumed :metricname @ :price Per :perUnitName";
+$_LANG['metrics']['invoiceitem']['included'] = ":included :metricname Included";
+
+$_LANG['bankPaymentDeclined'] = "The bank account details you entered were declined. Please try a different account or contact support.";
+$_LANG['invoicePaymentInitiated'] = "Thank You! Your payment has been initiated successfully. You will receive a confirmation email once the payment has been completed.";
+
+$_LANG['sitelockvpn']['loginPanelText'] = "Login to setup and manage your VPN user credentials and download the VPN clients.";
+$_LANG['store']['save'] = "Save :saving%";
+$_LANG['marketConnect']['codeguard']['manageBackup'] = "Manage Backups";
+$_LANG['store']['chooseExistingDomain'] = "Choose Existing Domain";
+$_LANG['store']['choosePaymentTerm'] = "Choose Payment Term";
+$_LANG['store']['chooseDomain'] = "Choose Domain";
+$_LANG['store']['subOfExisting'] = "Subdomain of an Existing Domain";
+$_LANG['store']['domainAlreadyOwned'] = "A domain I already own";
+$_LANG['store']['eligible'] = "Eligible";
+$_LANG['store']['login'] = "Login";
+$_LANG['store']['addToExistingPackage'] = "to add this to an existing hosting package.";
+
+$_LANG['marketConnect']['sitelock']['manageSecurity'] = "Manage Your Security";
+$_LANG['marketConnect']['sitelockvpn']['manageVPN'] = "Manage Your VPN";
+$_LANG['marketConnect']['spamexperts']['manageEmail'] = "Manage Your Email";
+$_LANG['marketConnect']['weebly']['buildWebsite'] = "Build Your Website";
+
+$_LANG['creditCardHolderName'] = "Nombre del titular de la tarjeta";
+
+$_LANG['redirectingToCompleteCheckout'] = "Estás siendo redirigido para completar tu pago. Espera un momento...";
+$_LANG['paypalEmailAddress'] = "Dirección de correo electrónico de PayPal";
+
+$_LANG['fromJust'] = "desde";
+$_LANG['remoteTransError'] = "Error en transacción remota. Por favor, contacta a soporte.";
+
+$_LANG['imageUnavailable'] = "Imagen no disponible";
+
+$_LANG['emailPreferences']['affiliate'] = "Correos de afiliados - Recibe notificaciones de afiliados";
+$_LANG['emailPreferences']['domain'] = "Correos de dominios - Relacionados a registros/transferencias/renovaciones";
+$_LANG['emailPreferences']['general'] = "Correos generales - Todos los correos relacionados a la cuenta";
+$_LANG['emailPreferences']['invoice'] = "Correos de facturación - Facturas creadas, recordatorios, vencimientos";
+$_LANG['emailPreferences']['product'] = "Correos de productos - Correos de bienvenida, suspensiones y otras notificaciones";
+$_LANG['emailPreferences']['support'] = "Correos de soporte - Recibe una copia de todos los tickets";
+
+$_LANG['navMarketConnectService']['marketgoo'] = "Herramientas SEO";
+$_LANG['store']['marketgoo']['title'] = "Marketgoo SEO Tools";
+$_LANG['store']['marketgoo']['headline'] = "Improve your Site's traffic";
+$_LANG['store']['marketgoo']['tagline'] = "and <em>Grow your Business</em> with marketgoo";
+$_LANG['store']['marketgoo']['tab']['how'] = "How does it work?";
+$_LANG['store']['marketgoo']['tab']['features'] = "Features & Pricing";
+$_LANG['store']['marketgoo']['tab']['testimonials'] = "What other users say";
+$_LANG['store']['marketgoo']['tab']['faqs'] = "FAQs and Support";
+$_LANG['store']['marketgoo']['features']['1'] = "Sign Up and get instant SEO Report";
+$_LANG['store']['marketgoo']['features']['2'] = "Get your easy SEO plan";
+$_LANG['store']['marketgoo']['features']['3'] = "Follow the simple step-by-step instructions";
+$_LANG['store']['marketgoo']['features']['4'] = "Start Improving";
+$_LANG['store']['marketgoo']['featuresdetail']['4'] = "Put your SEO plan into action (with no experts needed) and get a monthly progress report";
+$_LANG['store']['marketgoo']['features']['5'] = "Track & Monitor";
+$_LANG['store']['marketgoo']['featuresdetail']['5'] = "See how your competitors rank for the keywords you're focusing on, and track their site's popularity";
+$_LANG['store']['marketgoo']['featurematrix']['1'] = "Search engine submission";
+$_LANG['store']['marketgoo']['featurematrix']['2'] = "Connect Google Analytics";
+$_LANG['store']['marketgoo']['featurematrix']['3'] = "Download SEO report as PDF";
+$_LANG['store']['marketgoo']['featurematrix']['4'] = "Pages scanned";
+$_LANG['store']['marketgoo']['featurematrix']['5'] = "Competitor tracking";
+$_LANG['store']['marketgoo']['featurematrix']['6'] = "Keyword tracking & optimization";
+$_LANG['store']['marketgoo']['featurematrix']['7'] = "Updated report & plan";
+$_LANG['store']['marketgoo']['featurematrix']['8'] = "Custom SEO Plan";
+$_LANG['store']['marketgoo']['featurematrix']['9'] = "Monthly progress report";
+$_LANG['store']['marketgoo']['completeStepByStep'] = "<span>Complete</span> with step-by-step guide";
+$_LANG['store']['marketgoo']['signup'] = "Signup Now";
+$_LANG['store']['marketgoo']['testimonials']['casestudy'] = "Read the case study";
+$_LANG['store']['marketgoo']['faqs']['title'] = "FAQs and Support";
+$_LANG['store']['marketgoo']['faqs']['q1'] = "Should I choose Lite or Pro?";
+$_LANG['store']['marketgoo']['faqs']['a1'] = "See a Video comparison of the Plans";
+$_LANG['store']['marketgoo']['faqs']['q2'] = "Does marketgoo make the recommended changes or do I?";
+$_LANG['store']['marketgoo']['faqs']['a2'] = "marketgoo is a Do-it-Yourself tool, so while we help you with analysing your site and giving recommendations, along with tasks and instructions for your to optimize your site, we don't make these changes for you.";
+$_LANG['store']['marketgoo']['faqs']['q3'] = "Why do I need SEO?";
+$_LANG['store']['marketgoo']['faqs']['a3'] = "You work on your SEO in order to improve your site's rankings in search results. This leads to attracting more traffic - and ideally, to convert that traffic into customers and leads.";
+$_LANG['store']['marketgoo']['adminPreview'] = "Marketgoo plans you activate will be displayed here";
+
+$_LANG['upTo'] = "Hasta :num";
+$_LANG['weekly'] = "Semanal";
+$_LANG['daily'] = "Diario";
+$_LANG['limited'] = "Limitado";
+
+$_LANG['marketConnect']['marketgoo']['manageSEO'] = "Marketgoo SEO";
+$_LANG['marketConnect']['marketgoo']['manage'] = "Login to Dashboard";
+
+$_LANG['store']['marketgoo']['cartTitle'] = "Marketgoo SEO Tools";
+$_LANG['store']['marketgoo']['cartShortDescription'] = "Improve your site's traffic and grow your business with do-it-yourself SEO Tools from marketgoo.";
+
+$_LANG['store']['marketgoo']['promo']['sidebar']['title'] = "Marketgoo SEO Tools";
+$_LANG['store']['marketgoo']['promo']['sidebar']['body'] = "Improve your site's traffic and grow your business";
+
+$_LANG['emailPreferences']['oneRequired'] = "Debido a requerimientos del ICANN, debes contar con al menos una dirección de correo electrónico habilitada para recibir notificaciones..";
+$_LANG['emailPreferences']['domainContactRequired'] = "Para deshabilitar las notificaciones por correo, debes primero crear un contacto adicional y habilitar las notificaciones.";
+$_LANG['emailPreferences']['domainClientRequired'] = "Para deshabilitar las notificaciones por correo, debes primero crear un contacto alternativo para recibirlas en tu lugar.";
+
+$_LANG['twoFactor']['duosecurity']['friendlyName'] = "Duo Security";
+$_LANG['twoFactor']['duosecurity']['description'] = "Get codes via Duo Push, SMS or Phone Callback.";
+$_LANG['twoFactor']['totp']['friendlyName'] = "Time Based Tokens";
+$_LANG['twoFactor']['totp']['description'] = "Get codes from an app like Google Authenticator or Duo.";
+$_LANG['twoFactor']['yubico']['friendlyName'] = "Yubico";
+$_LANG['twoFactor']['yubico']['description'] = "Generate codes using a YubiKey hardware device.";
+
+$_LANG['orderForm']['selectCategory'] = "Elige una categoriía del menú lateral";
+
+$_LANG['store']['sampleProduct'] = "Esto es un producto muestra";
 
 //OpenSRS Pro Additional Fields
 $_LANG["domainswhois"] = "Privacidad Whois";
